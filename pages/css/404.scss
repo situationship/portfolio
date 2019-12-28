@@ -1,0 +1,26 @@
+$header-size: 40px;
+$body-size: 18px;
+$accent-color: #FF3B4A;
+
+.error, .message {
+  text-align: center;
+  margin-top: 0;
+}
+.error {
+  font-family: input-mono, monospace;
+  font-weight: bold;
+  font-size: 200px;
+  color: $accent-color;
+  margin-bottom: 25px;
+}
+.message {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: $header-size;
+}
+
+@media only screen and (max-width: 601px) {
+  .error {
+    font-size: 100px;
+  }
+}

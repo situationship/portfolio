@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="pinterest" content="nopin" />
+  <title>Gina Chee</title>
+  <meta name="description" content="Gina Chee is a visual designer and artist. View her portfolio here!">
+  <link rel="apple-touch-icon" sizes="180x180" href="media\favicon\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media\favicon\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media\favicon\favicon-16x16.png">
+  <link rel="manifest" href="media\favicon\site.webmanifest">
+  <link rel="mask-icon" href="media\favicon\safari-pinned-tab.svg" color="#ff3b4a">
+  <meta name="msapplication-TileColor" content="#ff3b4a">
+  <meta name="theme-color" content="#ffffff">
+  <link href="pages\css\grid.css" rel="stylesheet">
+  <link href="pages\css\home.css" rel="stylesheet">
+  <link href="pages\css\style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a3e9cdedbf.js" crossorigin="anonymous"></script>
+  <script src="pages\js\pace.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+  <a href="pages\index.html" title="Gina Chee"><img class="nav-logo" src="media\logo.svg" alt="Gina Chee logo"/></a>
+  <ul class="nav-items">
+    <li><a href="pages\index.html" title="Portfolio">Portfolio</a></li>
+    <li><a href="pages\about.html" title="About">About</a></li>
+    <li><a href="pages\cv.html" title="CV">CV</a></li>
+  </ul>
+</nav>
+<div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</div>
+<div class="mobile-overlay">
+  <ul class="mobile-nav-items">
+    <li><a href="pages\index.html">Portfolio</a></li>
+    <li><a href="pages\about.html">About</a></li>
+    <li><a href="pages\cv.html">CV</a></li>
+  </ul>
+</div>
+
+<div id="intro">
+  <div class="container3">
+    <div class="row" style="padding:50px 0;">
+      <div class="col m6 s10 offset-s1">
+        <h2 class="hello">Hello! My name is</h2>
+        <h1 class="name"><span class="animation"><a href="pages\about.html" title="About">Gina</a></span>.</h1>
+        <h3 class="description">I am a <a href="pages\digital-works.html" title="Digital Works">visual designer</a> and <a href="pages\fine-art.html" title="Fine Art">artist</a> based in NYC.</h3>
+      </div>
+      <div class="col m5 offset-m1">
+        <img class="portrait" src="media\me.jpg" alt="Gina Chee">
+      </div>
+    </div>
+  </div>
+  <a class="arrow" href="#portfolio" title="Portfolio">
+        <div class="action-down">
+            <p class="scroll">View my work!</p>
+            <div class="bounce"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </a>
+</div>
+
+<ul id="portfolio">
+  <li>
+        <a class="portfolio-cell" href="pages\wake-me-up-at.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\Wake-Me-Up-At.jpg" alt="Wake Me Up At...">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">Wake Me Up At...</span>
+        </a>
+    </li>
+  <li>
+        <a class="portfolio-cell" href="pages\pink-tax.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\The-Pink-Tax.png" alt="Case Study: The Pink Tax">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">Case Study: The Pink Tax</span>
+        </a>
+    </li>
+    <li>
+        <a class="portfolio-cell" href="pages\viewtrade.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\ViewTrade-Institutional.png" alt="ViewTrade Institutional">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">ViewTrade Institutional</span>
+        </a>
+    </li>
+    <li>
+        <a class="portfolio-cell" href="pages\ipo.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\IPO-App.png" alt="IPO App">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">IPO App</span>
+        </a>
+    </li>
+    <li>
+        <a class="portfolio-cell" href="pages\digital-works.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\Digital-Works.png" alt="Digital Works">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">Digital Works</span>
+        </a>
+    </li>
+    <li>
+        <a class="portfolio-cell" href="pages\fine-art.html">
+            <img class="portfolio-thumbnail" src="media\thumbnails\Fine-Art.png" alt="Fine Art">
+            <span class="portfolio-overlay"></span>
+            <span class="portfolio-text">Fine Art</span>
+        </a>
+    </li>
+</ul>
+<div class="container2">
+  <footer class="footer-bar">
+    <div class="row">
+      <div class="col l6 m12" style="margin-top: 20px;">
+        <p class="subheader">Interested in learning more?</p>
+        <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a>.</p>
+        <p class="body">Or, get to know me better through my social media links.</p>
+      </div>
+      <div class="col l4 offset-l2 m12" style="margin-top: 20px;">
+        <p class="subheader">Keep in touch:</p>
+        <a href="https://www.linkedin.com/in/ginachee/" class="fab fa-linkedin-in" title="LinkedIn" target="_blank"></a>
+        <a href="https://www.instagram.com/ginacheee/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
+        <a href="https://vimeo.com/ginachee" class="fab fa-vimeo-v" title="Vimeo" target="_blank"></a>
+        <a href="https://github.com/gina-chee" class="fab fa-github" title="GitHub" target="_blank"></a>
+      </div>
+      <div class="col l4 offset-l2 s12" style="margin-top: 30px;">
+        <p class="body"><a href="#" title="Back to top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m12">
+        <p class="copyright">Copyright &copy; 2020 Gina Chee, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="pages\js\script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="pinterest" content="nopin" />
+  <title>Digital Works | Gina Chee</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="media\favicon\apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media\favicon\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media\favicon\favicon-16x16.png">
+  <link rel="manifest" href="media\favicon\site.webmanifest">
+  <link rel="mask-icon" href="media\favicon\safari-pinned-tab.svg" color="#ff3b4a">
+  <meta name="msapplication-TileColor" content="#ff3b4a">
+  <meta name="theme-color" content="#ffffff">
+  <link href="pages\css\grid.css" rel="stylesheet">
+  <link href="pages\css\project.css" rel="stylesheet">
+  <link href="pages\css\style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a3e9cdedbf.js" crossorigin="anonymous"></script>
+  <script src="pages\js\pace.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+  <a href="/" title="Gina Chee"><img class="nav-logo" src="media\logo.svg" alt="Gina Chee logo"/></a>
+  <ul class="nav-items">
+    <li><a href="/" title="Portfolio">Portfolio</a></li>
+    <li><a href="/about" title="About">About</a></li>
+    <li><a href="/cv" title="CV">CV</a></li>
+  </ul>
+</nav>
+<div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</div>
+<div class="mobile-overlay">
+  <ul class="mobile-nav-items">
+    <li><a href="/">Portfolio</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/cv">CV</a></li>
+  </ul>
+</div>
+
+<div class="container1">
+  <p class="header">Digital Works</p>
+  <div class="row">
+    <div class="col m6 s12" >
+      <div class="gallery-container">
+        <img src="media\digital-works\supreme-mrclean.png" alt="Go to Therapy">
+        <p class="caption"><i>Supreme® x Mr. Clean®,</i> 2019<br>Photo manipulation<br>Tools used: Adobe Photoshop</p>
+      </div>
+      <div class="gallery-container">
+        <img class="gif" src="media\digital-works\phone.png" alt="Rotary Phone"><i class="fas fa-video"></i>
+        <p class="caption"><i>Rotary Phone,</i> 2018<br>3D model<br>Tools used: Autodesk Maya</p>
+      </div>
+      <div class="gallery-container">
+        <a href="https://www.openprocessing.org/sketch/712253" title="Paint Tool on OpenProcessing" target="_blank"><img src="media\digital-works\paint-tool.jpg" alt="Paint Tool"></a>
+        <p class="caption"><i>Paint Tool,</i> 2017<br>Creative coding (<a href="https://www.openprocessing.org/sketch/712253" title="Paint Tool on OpenProcessing" target="_blank">View the full code here</a>)<br>Tools used: Processing</p>
+      </div>
+      <div class="gallery-container">
+        <img src="media\digital-works\cultural-appropriation.png" alt="Cultural Appropriation">
+        <p class="caption"><i>Cultural Appropriation,</i> 2016<br>Graphic design<br>Tools used: Adobe Illustrator</p>
+      </div>
+    </div>
+    <div class="col m6 s12" >
+      <div class="gallery-container">
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/335178274?color=ff3b4a&title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p class="caption"><i>How to Take an Instagram Picture,</i> 2019<br>2D animation (<a href="https://vimeo.com/335178274" title="How to Take an Instagram Picture on Vimeo">Link</a>)<br>Tools used: Adobe After Effects, Illustrator</p>
+      </div>
+      <div class="gallery-container">
+        <img class="gif" src="media\digital-works\dirty-computer.png" alt="Dirty Computer"><i class="fas fa-video"></i>
+        <p class="caption"><i>Dirty Computer,</i> 2019<br>Motion graphics<br>Tools used: Adobe After Effects, Photoshop</p>
+      </div>
+      <div class="gallery-container">
+        <a href="https://www.openprocessing.org/sketch/488502" title="Fishpond on OpenProcessing" target="_blank"><img class="gif" src="media\digital-works\fishpond.png" alt="Fishpond"></a><i class="fas fa-video"></i>
+        <p class="caption"><i>Fishpond,</i> 2017<br>Creative coding (<a href="https://www.openprocessing.org/sketch/488502" title="Fishpond on OpenProcessing" target="_blank">View the full code here</a>)<br>Tools used: p5.js</p>
+      </div>
+      <div class="gallery-container">
+        <img class="gif" src="media\digital-works\pumpkin.png" alt="Pumpkin Head"><i class="fas fa-video"></i>
+        <p class="caption"><i>Pumpkin Head,</i> 2016<br>2D animation<br>Tools used: Adobe Illustrator, Photoshop</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container2">
+  <div class="row" style="margin-top:40px;">
+    <div class="col xl4 l5 m6 s12" style="margin-top:40px;">
+      <p class="subheader subheader-left">Previous project:</p>
+      <a href="/viewtrade" title="ViewTrade Institutional"><button class="button button-left"><i class="fas fa-chevron-left"></i>&emsp;ViewTrade Institutional</button></a>
+    </div>
+    <div class="col xl4 offset-xl4 l5 offset-l2 m6 s12" style="margin-top:40px;">
+      <p class="subheader subheader-right">Next project:</p>
+      <a href="/fine-art" title="Fine Art"><button class="button button-right">Fine Art&emsp;<i class="fas fa-chevron-right"></i></button></a>
+    </div>
+  </div>
+</div>
+<div class="container2">
+  <footer class="footer-bar">
+    <div class="row">
+      <div class="col l6 m12" style="margin-top: 20px;">
+        <p class="subheader">Interested in learning more?</p>
+        <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a>.</p>
+        <p class="body">Or, get to know me better through my social media links.</p>
+      </div>
+      <div class="col l4 offset-l2 m12" style="margin-top: 20px;">
+        <p class="subheader">Keep in touch:</p>
+        <a href="https://www.linkedin.com/in/ginachee/" class="fab fa-linkedin-in" title="LinkedIn" target="_blank"></a>
+        <a href="https://www.instagram.com/ginacheee/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
+        <a href="https://vimeo.com/ginachee" class="fab fa-vimeo-v" title="Vimeo" target="_blank"></a>
+        <a href="https://github.com/gina-chee" class="fab fa-github" title="GitHub" target="_blank"></a>
+      </div>
+      <div class="col l4 offset-l2 s12" style="margin-top: 30px;">
+        <p class="body"><a href="#" title="Back to top">Back to top <i class="fas fa-arrow-up"></i></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col m12">
+        <p class="copyright">Copyright &copy; 2020 Gina Chee, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="pages\js\script.js"></script>
+</body>
+</html>

@@ -11,7 +11,7 @@ function toggleMenu() {
     }, 300);
 }
 
-$(document).ready(function()
+/*$(document).ready(function()
 {
     $(".gif").hover(
         function()
@@ -24,7 +24,7 @@ $(document).ready(function()
           var src = $(this).attr("src");
           $(this).attr("src", src.replace(/\.gif$/i, ".png"));
         });
-});
+});*/
 
 $(document).ready(function(){
     // Add smooth scrolling to all links

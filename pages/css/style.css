@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://use.typekit.net/pvq3wca.css");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -248,32 +252,6 @@ img {
   font-size: 18px;
   color: #A6A6A6;
   text-decoration: none;
-}
-
-.quickNav {
-  padding: 40px 0 20px 0;
-  overflow: hidden;
-  text-align: center;
-  z-index: 6;
-}
-.quickNav a.unselected, .quickNav a.selected {
-  display: inline-block;
-  margin-right: -4px;
-  /* inline-block gap fix */
-  margin: 20px 50px;
-  text-decoration: none;
-  font-size: 18px;
-}
-.quickNav a.unselected {
-  color: #A6A6A6;
-  transition: 0.3s;
-}
-.quickNav a.unselected:hover {
-  color: #FF3B4A;
-}
-.quickNav a.selected {
-  color: #A6A6A6;
-  font-weight: bold;
 }
 
 .footer-bar {

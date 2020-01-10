@@ -79,7 +79,7 @@ $transition-speed: 0.3s;
   .section {
     font-size: $subheader-small;
   }
-  .resume-title, .resume-company .resume-description {
+  .resume-title, .resume-company, .resume-description {
     font-size: $body-small;
   }
   .resume-caption, .contact {

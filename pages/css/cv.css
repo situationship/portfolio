@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
-.large, .contact, .section, .resume-title, .resume-description, .resume-caption {
+.large, .contact, .section, .resume-title, .resume-company, .resume-description, .resume-caption {
   margin: 0;
 }
 
@@ -32,13 +32,28 @@
   text-transform: uppercase;
 }
 
-.resume-title {
+.resume-company, .resume-title {
   font-size: 18px;
   font-weight: normal;
   color: black;
 }
-.resume-title span {
+.resume-company span, .resume-title span {
   font-weight: bold;
+}
+
+.resume-title {
+  font-weight: bold;
+}
+
+.resume-caption {
+  font-family: input-mono, monospace;
+  font-size: 12px;
+  color: #A6A6A6;
+  margin-top: 5px;
+}
+
+.resume-company, .resume-caption {
+  text-align: right;
 }
 
 .resume-description {
@@ -54,13 +69,6 @@
   color: #A6A6A6;
 }
 
-.resume-caption {
-  font-family: input-mono, monospace;
-  font-size: 12px;
-  color: #A6A6A6;
-  margin-top: 5px;
-}
-
 @media only screen and (max-width: 601px) {
   .large {
     font-size: 40px;
@@ -70,7 +78,7 @@
     font-size: 24px;
   }
 
-  .resume-title, .resume-description {
+  .resume-title, .resume-company .resume-description {
     font-size: 13.5px;
   }
 

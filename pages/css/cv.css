@@ -37,9 +37,6 @@
   font-weight: normal;
   color: black;
 }
-.resume-company span, .resume-title span {
-  font-weight: bold;
-}
 
 .resume-title {
   font-weight: bold;
@@ -78,7 +75,7 @@
     font-size: 24px;
   }
 
-  .resume-title, .resume-company .resume-description {
+  .resume-title, .resume-company, .resume-description {
     font-size: 13.5px;
   }
 

@@ -51,7 +51,9 @@ body {
 }
 
 .pace .pace-progress {
-  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #4AFF3B, #3BACFF, #8E3BFF, #FF3BAC);
+  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF, #3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
+  background-image: -webkit-linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF, #3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
+  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF, #3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -248,7 +250,7 @@ img {
   text-align: right;
 }
 
-.button, .fa-chevron-left, .fa-chevron-right {
+.button {
   font-size: 18px;
   color: #A6A6A6;
   text-decoration: none;
@@ -257,7 +259,7 @@ img {
 .footer-bar {
   margin: 80px 0 50px 0;
 }
-.footer-bar .fa-linkedin-in, .footer-bar .fa-instagram, .footer-bar .fa-vimeo-v, .footer-bar .fa-github {
+.footer-bar .fa-linkedin-in, .footer-bar .fa-instagram, .footer-bar .fa-vimeo-v, .footer-bar .fa-github, .footer-bar .fa-dribbble, .footer-bar .fa-behance {
   padding: 8px;
   font-size: 20px;
   width: 20px;
@@ -270,7 +272,7 @@ img {
   background: #FF3B4A;
   color: white;
 }
-.footer-bar .fa-linkedin-in:hover, .footer-bar .fa-instagram:hover, .footer-bar .fa-vimeo-v:hover, .footer-bar .fa-github:hover {
+.footer-bar .fa-linkedin-in:hover, .footer-bar .fa-instagram:hover, .footer-bar .fa-vimeo-v:hover, .footer-bar .fa-github:hover, .footer-bar .fa-dribbble:hover, .footer-bar .fa-behance:hover {
   transition: 0.3s;
   background: #A6A6A6;
 }
@@ -357,7 +359,7 @@ img {
     display: none;
   }
 
-  .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list {
+  .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list, .fa-arrow-up {
     font-size: 13.5px;
   }
 

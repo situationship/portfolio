@@ -55,7 +55,9 @@ body {
   display: none;
 }
 .pace .pace-progress {
-  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #4AFF3B, #3BACFF,#8E3BFF, #FF3BAC);
+  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
+  background-image: -webkit-linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
+  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -232,14 +234,14 @@ img {
 .button-right, .subheader-right {
   text-align: right;
 }
-.button, .fa-chevron-left, .fa-chevron-right {
+.button {
   font-size: $body-size;
   color: $gray-color;
   text-decoration: none;
 }
 .footer-bar {
   margin: 80px 0 50px 0;
-  .fa-linkedin-in, .fa-instagram, .fa-vimeo-v, .fa-github {
+  .fa-linkedin-in, .fa-instagram, .fa-vimeo-v, .fa-github, .fa-dribbble, .fa-behance {
     padding: 8px;
     font-size: 20px;
     width: 20px;
@@ -329,7 +331,7 @@ img {
   .subheader-left, .subheader-right {
     display: none;
   }
-  .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list {
+  .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list, .fa-arrow-up {
     font-size: $body-small;
   }
   .copyright, .caption {

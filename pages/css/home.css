@@ -210,7 +210,11 @@ p.scroll a, .fa-chevron-down a {
   }
 
   .portfolio-text {
-    font-size: 18px;
+    font-size: 16px;
+  }
+
+  p.scroll, .fa-chevron-down {
+    font-size: 12px;
   }
 }
 

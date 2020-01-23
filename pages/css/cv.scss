@@ -2,10 +2,10 @@
 
 $subheader-size: 24px;
 $body-size: 18px;
-$caption-size: 12px;
-$subheader-small: 24px;
-$body-small: 13.5px;
-$caption-small: 9px;
+$caption-size: 13px;
+$subheader-small: 21px;
+$body-small: 16px;
+$caption-small: 12px;
 $accent-color: #FF3B4A;
 $gray-color: #A6A6A6;
 $transition-speed: 0.3s;
@@ -68,6 +68,10 @@ $transition-speed: 0.3s;
     }
   }
 }
+.skills-title {
+  font-weight: bold;
+  font-size: $body-size;
+}
 
 @media only screen and (max-width: 601px) {
   .large {
@@ -76,8 +80,23 @@ $transition-speed: 0.3s;
   .section {
     font-size: $subheader-small;
   }
-  .resume-title, .resume-company, .resume-description {
+  .resume-title, .resume-company, .resume-description, .skills-title {
     font-size: $body-small;
+  }
+  .resume-company, .resume-caption {
+    text-align:left;
+  }
+  .resume-company {
+    font-weight: bold;
+  }
+  .resume-title {
+    font-weight: normal;
+  }
+  .mobile-divider {
+    padding-bottom: 16px;
+  }
+  .mobile-section {
+    padding-bottom: 24px;
   }
   .resume-caption, .contact {
     font-size: $caption-small;

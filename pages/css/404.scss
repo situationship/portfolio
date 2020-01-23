@@ -1,5 +1,6 @@
 $header-size: 40px;
 $body-size: 18px;
+$header-small: 36px;
 $accent-color: #FF3B4A;
 
 .error, .message {
@@ -21,6 +22,9 @@ $accent-color: #FF3B4A;
 
 @media only screen and (max-width: 601px) {
   .error {
-    font-size: 100px;
+    font-size: 140px;
+  }
+  .message {
+    font-size: $header-small;
   }
 }

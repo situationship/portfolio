@@ -104,7 +104,7 @@ img {
 
 .caption {
   font-family: input-mono, monospace;
-  font-size: 12px;
+  font-size: 13px;
   color: #A6A6A6;
   margin: 4px 0;
 }
@@ -285,7 +285,7 @@ img {
 
 .copyright {
   font-family: input-mono, monospace;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 50px;
 }
 
@@ -348,11 +348,11 @@ img {
   }
 
   .header, .tagline {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .subheader {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .subheader-left, .subheader-right {
@@ -360,11 +360,11 @@ img {
   }
 
   .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list, .fa-arrow-up {
-    font-size: 13.5px;
+    font-size: 16px;
   }
 
   .copyright, .caption {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 .container1, .container2, .container3, .container4, .container5 {

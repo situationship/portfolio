@@ -77,6 +77,7 @@
   }
 
   .section {
+    font-weight: normal;
     font-size: 21px;
   }
 
@@ -90,6 +91,7 @@
 
   .resume-company {
     font-weight: bold;
+    font-size: 21px;
   }
 
   .resume-title {

@@ -1,7 +1,8 @@
 $name-size: 100px;
 $subheader-size: 24px;
 $body-size: 18px;
-$caption-size: 12px;
+$caption-size: 13px;
+$subheader-small: 21px;
 $body-small: 16px;
 $caption-small: 12px;
 $accent-color: #FF3B4A;
@@ -70,10 +71,6 @@ p.scroll {
 p.scroll, .fa-chevron-down {
   color: $gray-color;
   font-size: $caption-size;
-}
-p.scroll a, .fa-chevron-down a {
-  color: $gray-color;
-  text-decoration: none;
 }
 .fa-chevron-down {
   width: 18px;
@@ -172,6 +169,12 @@ p.scroll a, .fa-chevron-down a {
 }
 
 @media only screen and (max-width: 601px) {
+  .portfolio-text {
+    font-size: $subheader-small;
+  }
+}
+
+@media only screen and (max-width: 601px) {
   img.portrait {
     display: none;
   }
@@ -182,7 +185,7 @@ p.scroll a, .fa-chevron-down a {
     margin: 0;
   }
   .portfolio-text {
-    font-size:$body-small;
+    font-size:$body-size;
   }
   p.scroll, .fa-chevron-down {
     font-size: $caption-small;

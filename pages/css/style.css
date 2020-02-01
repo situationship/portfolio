@@ -277,7 +277,7 @@ img {
   background: #A6A6A6;
 }
 
-.fa-arrow-up {
+.back-to-top, .fa-arrow-up {
   padding: 0;
   font-size: 18px;
   text-decoration: underline;

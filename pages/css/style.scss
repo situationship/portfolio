@@ -11,12 +11,11 @@ $body-small: 16px;
 $caption-small: 12px;
 $accent-color: #FF3B4A;
 $gray-color: #A6A6A6;
-$lightgray-color: #F2F2F5;
 $transition-speed: 0.3s;
 $input-font: input-mono, monospace;
 
 html {
-  scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 body {
   font-family: 'Lato', sans-serif;
@@ -215,7 +214,7 @@ img {
 }
 
 .button {
-  background-color: $lightgray-color;
+  background-color: $accent-color;
   border: none;
   padding: 24px;
   width: 100%;
@@ -224,7 +223,6 @@ img {
   cursor: pointer;
   &:hover {
     background-color: $gray-color;
-    color: black;
     transition: $transition-speed;
   }
 }
@@ -235,13 +233,15 @@ img {
   text-align: right;
 }
 .button {
-  font-size: $body-size;
-  color: $gray-color;
+  font-family: $input-font;
+  font-size: $caption-size;
+  color: white;
   text-decoration: none;
 }
 .footer-bar {
   margin: 80px 0 50px 0;
   .fa-linkedin-in, .fa-instagram, .fa-vimeo-v, .fa-github, .fa-dribbble, .fa-behance {
+    display: inline-block;
     padding: 8px;
     font-size: 20px;
     width: 20px;
@@ -250,7 +250,6 @@ img {
     text-decoration: none;
     margin: 0 5px 0 0;
     border-radius: 50%;
-    display: inline-block;
     background: $accent-color;
     color: white;
     &:hover {
@@ -274,6 +273,39 @@ img {
 .gallery-container {
   position: relative;
   margin: 0 0 25px 0;
+  img {
+    display: block;
+  }
+  .fa-video {
+    font-size: $subheader-size;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:16px;
+    left:16px;
+  }
+}
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+.grid-sizer--width1, .grid-item--width1 {
+  margin: 1.5%;
+  width: 30.33333333%;
+}
+.grid-sizer--width2, .grid-item--width2 {
+  margin: 1.5%;
+  width: 47%;
+}
+.grid-item {
+  float: left;
+  height: auto;
   img {
     display: block;
   }
@@ -316,6 +348,11 @@ img {
     margin-top: 40px;
   }
 }
+@media only screen and (max-width: 992px) {
+  .grid-sizer--width1, .grid-item--width1 {
+    width: 47%;
+  }
+}
 @media only screen and (max-width: 601px) {
   .hamburger-menu {
     display: block;
@@ -332,11 +369,15 @@ img {
   .subheader-left, .subheader-right {
     display: none;
   }
-  .body, .quickNav a.selected, .quickNav a.unselected, li, .button, .subheader-left, .subheader-right, .specs-title, .specs-list, .fa-arrow-up {
+  .body, .quickNav a.selected, .quickNav a.unselected, li, .subheader-left, .subheader-right, .specs-title, .specs-list, .fa-arrow-up {
     font-size: $body-small;
   }
-  .copyright, .caption {
+  .copyright, .caption, .button {
     font-size: $caption-small;
+  }
+  .grid-sizer--width1, .grid-item--width1, .grid-sizer--width2, .grid-item--width2 {
+    margin: 3%;
+    width: 94%;
   }
 }
 

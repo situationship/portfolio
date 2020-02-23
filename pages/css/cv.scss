@@ -18,10 +18,9 @@ $transition-speed: 0.3s;
   font-weight: 900;
 }
 .contact {
-  font-size: $caption-size;
+  font-size: $body-small;
   margin: 5px 0;
-  .fa-envelope, .fa-linkedin-in {
-    font-size: $caption-size;
+  .fa-envelope, .fa-linkedin-in, .fa-download {
     padding: 0 10px 0 0;
     color: $accent-color;
   }
@@ -72,35 +71,51 @@ $transition-speed: 0.3s;
   font-weight: bold;
   font-size: $body-size;
 }
+.skills-list {
+  font-size: $body-size;
+  color: $gray-color;
+  margin: 10px 0 0 0;
+}
+
+@media only screen and (min-width:602px) {
+  .resume-title--mobile, .resume-caption--mobile, .resume-description--mobile {
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 601px) {
   .large {
     font-size: 40px;
   }
   .section {
-    font-weight: normal;
     font-size: $subheader-small;
-  }
-  .resume-title, .resume-company, .resume-description, .skills-title {
-    font-size: $body-small;
-  }
-  .resume-company, .resume-caption {
-    text-align:left;
-  }
-  .resume-company {
-    font-weight: bold;
-    font-size: $subheader-small;
-  }
-  .resume-title {
-    font-weight: normal;
   }
   .mobile-divider {
     padding-bottom: 16px;
   }
-  .mobile-section {
-    padding-bottom: 24px;
+  .contact {
+    font-size: $caption-size;
   }
-  .resume-caption, .contact {
+
+  .resume-title, .resume-company, .resume-description, .resume-caption {
+    display: none;
+  }
+  .skills-title, .skills-list, .resume-title--mobile, .resume-description--mobile {
+    font-size: $body-small;
+  }
+  .resume-title--mobile {
+    color: black;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .resume-description--mobile {
+    color: $gray-color;
+    margin-bottom: 0;
+  }
+  .resume-caption--mobile {
+    font-family: input-mono, monospace;
     font-size: $caption-small;
+    color: $gray-color;
+    line-height: .35;
   }
 }

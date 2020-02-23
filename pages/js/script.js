@@ -28,12 +28,10 @@ jQuery(document).ready(function() {
             return false;
         })
     });
-
 $('img').on('dragstart', function(event) { event.preventDefault(); });
 $('img').bind('contextmenu', function(e) {
     return false;
 });
-
 function toggleMenu() {
   $("#hamburgerMenu").toggleClass("collapsed");
   $(".mobile-overlay").animate({
@@ -41,7 +39,6 @@ function toggleMenu() {
         opacity: "toggle"
     }, 300);
 }
-
 /*$(document).ready(function()
 {
     $(".gif").hover(
@@ -56,3 +53,12 @@ function toggleMenu() {
           $(this).attr("src", src.replace(/\.gif$/i, ".png"));
         });
 });*/
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});

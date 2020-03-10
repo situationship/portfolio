@@ -1,7 +1,11 @@
-.container1, .container2, .container3, .container4, .container5 {
+.container0, .container1, .container2, .container3, .container4, .container5 {
   margin: 0 auto;
   width: 95%;
   z-index: -1;
+}
+
+.container0 {
+  max-width: 100%;
 }
 
 .container1 {

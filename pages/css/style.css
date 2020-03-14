@@ -11,6 +11,10 @@ body {
   padding-top: 65px;
 }
 
+.list {
+  margin: 15px 0;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -421,7 +425,7 @@ img {
 }
 
 .container4 {
-  max-width: 760px;
+  max-width: 680px;
 }
 
 .container5 {

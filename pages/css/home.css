@@ -118,77 +118,6 @@ p.scroll, .fa-chevron-down {
   max-width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-size: 0;
-  list-style: none;
-}
-#portfolio li {
-  display: inline-block;
-  *display: inline;
-  width: 50%;
-  vertical-align: middle;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-#portfolio li:hover .portfolio-thumbnail {
-  transform: scale(1.05);
-}
-#portfolio li:hover .portfolio-overlay {
-  opacity: 0.5;
-}
-#portfolio li:hover .portfolio-text {
-  transform: translateY(0px);
-  opacity: 0.9;
-}
-
-.portfolio-cell {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-thumbnail {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: none;
-  transform: scale(1);
-  transition: all 1s;
-}
-
-.portfolio-overlay {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  background: black no-repeat center 20%;
-  background-size: 50px 50px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  /*For IE6 - IE8*/
-  transition: all 0.6s;
-  z-index: 0;
-}
-
-.portfolio-text {
-  display: block;
-  padding: 0 30px;
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  top: 45%;
-  color: white;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  /*For older IE*/
-  transform: translateY(-20px);
-  transition: all 0.3s;
 }
 
 .content {
@@ -252,22 +181,18 @@ p.scroll, .fa-chevron-down {
   top: 20%;
 }
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 992px) {
   .content-details h3 {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .content-details p {
-    font-size: 16px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 601px) {
   img.portrait {
     display: none;
-  }
-
-  #portfolio li {
-    width: 100%;
   }
 
   .action-down {

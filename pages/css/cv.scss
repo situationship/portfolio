@@ -10,15 +10,13 @@ $accent-color: #FF3B4A;
 $gray-color: #A6A6A6;
 $transition-speed: 0.3s;
 
-.large, .contact, .section, .resume-title, .resume-company, .resume-description, .resume-caption {
-  margin: 0;
-}
 .large {
   font-size: 52px;
   font-weight: 900;
+  margin: 0;
 }
 .contact {
-  font-size: $body-small;
+  font-size: $caption-size;
   margin: 5px 0;
   .fa-envelope, .fa-linkedin-in, .fa-download {
     padding: 0 10px 0 0;
@@ -33,53 +31,20 @@ $transition-speed: 0.3s;
   }
 }
 .section {
+  margin: 20px 0;
+}
+.category {
   font-size: $subheader-size;
   font-weight: bold;
+  color: $accent-color;
+}
+.title {
+  font-size: $body-size;
   color: black;
-  text-transform: uppercase;
-}
-.resume-company, .resume-title {
-  font-size: $body-size;
-  font-weight: normal;
-  color: black;
-}
-.resume-title {
   font-weight: bold;
-}
-.resume-caption {
-  font-family: input-mono, monospace;
-  font-size: $caption-size;
-  color: $gray-color;
-  margin-top: 5px;
-}
-.resume-company, .resume-caption {
-  text-align:right;
-}
-.resume-description {
-  font-size: $body-size;
-  color: $gray-color;
-  margin-top: 10px;
-  a {
-    color: $accent-color;
-    &:hover {
-      transition: $transition-speed;
-      color: $gray-color;
-    }
-  }
-}
-.skills-title {
-  font-weight: bold;
-  font-size: $body-size;
-}
-.skills-list {
-  font-size: $body-size;
-  color: $gray-color;
-  margin: 10px 0 0 0;
-}
-
-@media only screen and (min-width:602px) {
-  .resume-title--mobile, .resume-caption--mobile, .resume-description--mobile {
-    display: none;
+  margin: 0 0 5px 0;
+  span {
+    font-weight: normal;
   }
 }
 
@@ -87,35 +52,16 @@ $transition-speed: 0.3s;
   .large {
     font-size: 40px;
   }
-  .section {
+  .contact {
+    font-size: $caption-small;
+  }
+  .category {
     font-size: $subheader-small;
   }
-  .mobile-divider {
-    padding-bottom: 16px;
-  }
-  .contact {
-    font-size: $caption-size;
-  }
-
-  .resume-title, .resume-company, .resume-description, .resume-caption {
-    display: none;
-  }
-  .skills-title, .skills-list, .resume-title--mobile, .resume-description--mobile {
+  .title {
     font-size: $body-small;
   }
-  .resume-title--mobile {
-    color: black;
-    font-weight: bold;
-    margin-top: 0;
-  }
-  .resume-description--mobile {
-    color: $gray-color;
-    margin-bottom: 0;
-  }
-  .resume-caption--mobile {
-    font-family: input-mono, monospace;
-    font-size: $caption-small;
-    color: $gray-color;
-    line-height: .35;
+  .section {
+    margin: 10px 0;
   }
 }

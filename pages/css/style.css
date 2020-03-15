@@ -102,15 +102,14 @@ img {
   user-select: none;
 }
 
-.shadow {
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-}
-
 .caption {
   font-family: input-mono, monospace;
   font-size: 13px;
   color: #A6A6A6;
   margin: 4px 0;
+}
+.caption span {
+  font-style: italic;
 }
 
 .hide {

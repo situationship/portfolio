@@ -97,14 +97,14 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
-.shadow {
-  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
-}
 .caption {
   font-family: $input-font;
   font-size: $caption-size;
   color: $gray-color;
   margin: 4px 0;
+  span {
+    font-style: italic;
+  }
 }
 
 .hide {

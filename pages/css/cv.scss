@@ -40,12 +40,15 @@ $transition-speed: 0.3s;
 }
 .title {
   font-size: $body-size;
-  color: black;
   font-weight: bold;
   margin: 0 0 5px 0;
   span {
     font-weight: normal;
   }
+}
+.description {
+  font-size: $body-size;
+  margin: 15px 0;
 }
 
 @media only screen and (max-width: 601px) {

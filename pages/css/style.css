@@ -102,6 +102,10 @@ img {
   user-select: none;
 }
 
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .caption {
   font-family: input-mono, monospace;
   font-size: 13px;
@@ -394,6 +398,10 @@ img {
 
   .copyright, .caption, .button {
     font-size: 12px;
+  }
+
+  .caption {
+    margin: 6px 0;
   }
 
   .grid-sizer--width1, .grid-item--width1, .grid-sizer--width2, .grid-item--width2 {

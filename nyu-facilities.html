@@ -53,7 +53,7 @@
   <p class="header">NYU Facilities Portal</p>
   <div class="row row-tagline">
     <div class="col l5 m12">
-      <p class="tagline">in the works</p>
+      <p class="tagline">Improving the NYU housing experience</p>
     </div>
     <div class="col l2 offset-l1 m4 s4">
       <ul class="specs">
@@ -66,21 +66,20 @@
     <div class="col l2 m4 s4">
       <ul class="specs">
         <li><p class="specs-title">Timeline:</p></li>
-        <li><p class="specs-list">Feb 2020</p></li>
+        <li><p class="specs-list">Feb - Mar 2020</p></li>
       </ul>
     </div>
     <div class="col l2 m4 s4">
       <ul class="specs">
         <li><p class="specs-title">Tools used:</p></li>
         <li><p class="specs-list">Figma</p></li>
-        <li><p class="specs-list">Adobe Illustrator</p></li>
       </ul>
     </div>
   </div>
   <div class="row">
     <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
       <p class="subheader">New York University houses approximately 12,000 students every year on campus dorms.</p>
-      <p class="body">Inspired by my own experience with dorming at NYU (ask me about the time my room flooded), I decided to take on the challenge to improve the current facilities and maintenance system for students and faculty. Since dorms are owned by NYU, residents must file a work request to get any maintenace issues fixed.</p>
+      <p class="body">Inspired by my own experience with dorming (ask me about the time my room flooded), I decided to take on the challenge to improve the current facilities and maintenance system for students and faculty. Since dorms are owned by NYU, residents must file a work request to get any maintenace issues fixed.</p>
     </div>
   </div>
   <div class="row row-paragraph">
@@ -110,30 +109,85 @@
     </div>
     <div class="col l10 offset-l1 m12 s12">
       <img src="media\nyu-facilities\student-persona-min.png" alt="NYU Student Persona">
+      <p class="caption" style="text-align:center;">Student persona</p>
     </div>
     <div class="col l10 offset-l1 m12 s12">
       <img src="media\nyu-facilities\facilities-persona-min.png" alt="NYU Facilities Persona">
+      <p class="caption" style="text-align:center;">Facilities worker persona</p>
     </div>
   </div>
   <div class="row row-paragraph">
     <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
       <p class="subheader">User Flows</p>
-      <p class="body">After analyzing these personas, I created a user flow for both the student and facility worker to figure out the most efficient way to get a maintenance issue fixed.</p>
+      <p class="body">After analyzing these personas, I created a user flow for both the student and facilities worker to figure out the most efficient way to get a maintenance issue fixed.</p>
     </div>
     <div class="col l10 offset-l1 m12 s12">
       <img src="media\nyu-facilities\student-userflows-min.PNG" alt="NYU Student User Flow">
-      <p class="caption">Yvette's user flow</p>
+      <p class="caption" style="text-align:center;">Yvette's user flow</p>
     </div>
     <div class="col l10 offset-l1 m12 s12">
       <img src="media\nyu-facilities\facilities-userflow-min.PNG" alt="NYU Facility Worker User Flow">
-      <p class="caption">Hank's user flow</p>
+      <p class="caption" style="text-align:center;">Hank's user flow</p>
     </div>
   </div>
   <div class="row row-paragraph">
     <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
       <p class="subheader">Research Synthesis</p>
       <p class="body">Based on my user interviews, I realized that the main issue with the current system is lack of communication. Students have troubles immediately after they submit a request, wondering what happens next? Facilities workers have trouble with trying to juggle the dozens of requests they get without being able to talk to the requestor for more clarity first.</p>
-      <p class="body">I knew I needed to create a process that would eliminate confusion and be more direct in communication. I used the MoSCoW method to determine what kind of features I should have/not have.</p>
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col l4 offset-l1 push-l6 m12 s12">
+      <p class="body">This is what NYU’s work request form currently looks like. Most students are not fans of the experience of this process. The design itself is also outdated, and doesn't quite comply with NYU's general branding guidelines.</p>
+      <p class="body">The work request form is also currently accessible to everyone on the internet, which is ridiculous because it makes it easy for non-NYU users to access the form.</p>
+    </div>
+    <div class="col l5 offset-l1 pull-l5 m8 offset-m2 s10 offset-s1">
+      <img src="media\nyu-facilities\old-work-request.png" alt="Current NYU Work Request Page">
+    </div>
+    <div class="row col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <p class="body">The number one complaint about this form (as previously mentioned) is the building selection process. Some buildings are listed as their address (725 Broadway), and some listen by the building name (Bobst Library), which is inconsistent and confusing to the user.</p>
+    </div>
+    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <img src="media\nyu-facilities\building-selection.png" alt="Building Selection on the Current NYU Work Request Page">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <p class="body">I knew I needed to create a process that would eliminate confusion and be more direct in communication. I referenced the <b>MoSCoW method</b> to determine what kind of features I should have/not have.</p>
+    </div>
+    <div class="row col m6 s12">
+      <p class="body"><b>Must have:</b></p>
+      <p class="body">
+        <ul><li class="list">Ability to describe the facility issue</li>
+          <li class="list">Ability to file claim on an old completed request (if request wasn’t actually completed)</li>
+          <li class="list">Input of where in the room the issue is located</li></ul>
+      </p>
+    </div>
+    <div class="row col m6 s12">
+      <p class="body"><b>Should have:</b></p>
+      <p class="body">
+        <ul><li class="list">Access to NYU people only</li>
+          <li class="list">Ability to schedule a time between student and facilities</li>
+          <li class="list">Option to include roommates in form</li>
+          <li class="list">Ability to look back at old requests</li>
+          <li class="list">Input for a student’s phone number</li></ul>
+      </p>
+    </div>
+    <div class="row col m6 s12">
+      <p class="body"><b>Could have:</b></p>
+      <p class="body">
+        <ul><li class="list">Add images for facility workers to reference</li>
+          <li class="list">Dropdown for different categories of requests</li>
+          <li class="list">Specific forms for if you are a student, employee, administrator, etc.</li></ul>
+      </p>
+    </div>
+    <div class="row col m6 s12">
+      <p class="body"><b>Won't have:</b></p>
+      <p class="body">
+        <ul><li class="list">Option to file a request for another NYU building</li>
+          <li class="list">Option to file a request for another person’s room</li>
+          <li class="list">Ability for non-NYU people to fill out request</li></ul>
+      </p>
     </div>
   </div>
   <div class="row row-paragraph">
@@ -142,16 +196,83 @@
       <p class="body">Finally, I designed the work request experience, following NYU’s <a href="https://www.nyu.edu/employees/resources-and-services/media-and-communications/styleguide/website/graphic-visual-design.html" target="_blank">branding guidelines</a> to design a form more fitted to their aesthetic. I designed and prototyped these high-fidelity screens using <a href="https://www.figma.com/file/KxwY0fMnNiZJ3I2O0csZSm/Work-Request-Form?node-id=0%3A1" target="_blank">Figma</a>.</p>
     </div>
   </div>
+  <div class="row row-paragraph">
+    <div class="col xl5 offset-xl1 push-xl6 l5 push-l7 m12 s12">
+      <p class="body"><b>NYUHome</b></p>
+      <p class="body">Facilities Portal will only be available to people with an NYU account, and can be accessed on the home page of NYU’s portal, or through the Facilities and Operations page (after logging in first).</p>
+      <p class="body">This makes the process more internal by preventing outsiders from being able to fill out the form, and also prevents students from filling out the form wrong if their email, dorm room, etc. is already in the system.</p>
+    </div>
+    <div class="col xl6 pull-xl6 l7 pull-l5 m10 offset-m1 s12">
+      <img class="shadow" src="media\nyu-facilities\01.png" alt="NYUHome">
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <p class="body"><b>Facilities Portal</b></p>
+      <p class="body">When the user accesses the portal, their NYU information is displayed on the opening page of the Facilities Portal to ensure the user is logged in correctly.</p>
+      <p class="body">Users can also view past requests, including requests made by other residents of their dorm. This makes it easier to track all requests concerning the user’s dorm, and eases communications between roommates.</p>
+      <p class="body">If the user has a comment or complaint, they can click on the icon next the status to enter their comment.</p>
+    </div>
+    <div class="row col l6 m10 offset-m1 s12">
+      <img class="shadow" src="media\nyu-facilities\02.png" alt="NYU Facilities Portal - no active requests">
+      <p class="caption">If the user has a request that hasn’t been fulfilled yet, it will be displayed here. You can also submit a new request under this section.</p>
+    </div>
+    <div class="row col l6 m10 offset-m1 s12">
+      <img class="shadow" src="media\nyu-facilities\05.png" alt="NYU Facilities Portal - active request">
+      <p class="caption">After submitting a work request, users are taken back to the home page and receive this success message. The form newly submitted is now accessible under “Active Requests”.</p>
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col xl5 l5 m12 s12">
+      <p class="body"><b>Work Request</b></p>
+      <p class="body">Since the request form can only be accessed through an NYU login, information like the first and last name, email, and dorm information are already filled out. However, the phone number section is left blank so the user can input another number if needed.</p>
+      <p class="body">A new feature is that users can add images of the issue if they want to. This makes it easier for facility workers to assess request and see if they have the means to fix it. Users also have the option to send a copy of the confirmation to their roommates. This is good for issues in communal spaces like the bathroom. They also can opt out of this option, but the default selection is to send a confirmation to roommates.</p>
+    </div>
+    <div class="col xl6 offset-xl1 l7 m10 offset-m1 s12">
+      <img class="shadow" src="media\nyu-facilities\04.png" alt="NYU Work Request">
+      <p class="caption">Users will only be allowed to upload image files (.jpg, .png, etc.) to prevent unnecessary uploads.</p>
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col xl4 offset-xl1 push-xl7 l5 push-l7 m12 s12">
+      <p class="body"><b>Email Confirmation</b></p>
+      <p class="body">This is the email the the user (and their roommates if they selected to send them a confirmation) receives.</p>
+      <p class="body">The user MUST schedule a time with Client Services Center using Calendly. A scheduled time will only be confirmed if the user who submitted the request signs up for a time. Once they schedule a time, the user and their roommates (if necessary) will receive a confirmation time.</p>
+    </div>
+    <div class="col xl7 pull-xl5 l7 pull-l5 m10 offset-m1 s12">
+      <img class="shadow" src="media\nyu-facilities\06.png" alt="Email Confirmation">
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <p class="body"><b>Mobile Design</b></p>
+      <p class="body">I also considered the responsive design of Facilities Portal. Since many students have their smartphones on them 24/7, I designed the mobile screens in case they chose to access the portal through a mobile device.</p>
+    </div>
+    <div class="col m4 offset-m2 s5 offset-s1">
+      <img src="media\nyu-facilities\07.png" alt="NYU Facilities Portal mobile screen">
+    </div>
+    <div class="col m4 s5">
+      <img src="media\nyu-facilities\08.png" alt="NYU Work Request mobile screen">
+    </div>
+  </div>
+  <div class="row row-paragraph">
+    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
+      <p class="subheader">Conclusion</p>
+      <p class="body">For the next steps, I would like to interview people from the facilities' side, conduct more usability tests on my product, and maybe even use this knowledge to one day improve Client Services Center’s process for everyone!</p>
+      <p class="body">Overall, I had a great time with this challenge, and it really gave me an opportunity to improve something within my school that I’m passionate about (as an ex-dormer) and that my fellow students also wanted to see fixed!</p>
+      <p class="body">Feel free to view the full interaction <a href="https://www.figma.com/file/KxwY0fMnNiZJ3I2O0csZSm/Work-Request-Form?node-id=0%3A1" target="_blank">here</a>.</p>
+    </div>
+  </div>
 </div>
 <div class="container2">
   <div class="row row-paragraph">
     <div class="col xl4 push-xl8 l5 push-l7 m6 push-m6 s12">
       <p class="subheader subheader-right">Next project:</p>
-      <a href="/wake-me-up-at"><button class="button button-right">Wake Me Up At...&emsp;<i class="fas fa-chevron-right"></i></button></a>
+      <a href="/united"><button class="button button-right">United Airlines&emsp;<i class="fas fa-chevron-right"></i></button></a>
     </div>
     <div class="col xl4 pull-xl4 l5 pull-l5 m6 pull-m6 s12">
       <p class="subheader subheader-left">Previous project:</p>
-      <a href="/artworks"><button class="button button-left"><i class="fas fa-chevron-left"></i>&emsp;Artworks</button></a>
+      <a href="/pink-tax"><button class="button button-left"><i class="fas fa-chevron-left"></i>&emsp;ThinkPink</button></a>
     </div>
   </div>
 </div>
@@ -160,7 +281,7 @@
     <div class="row row-paragraph">
       <div class="row col l7 m12 s12">
         <p class="subheader">Interested in learning more?</p>
-        <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a> if you want to chat about the design industry, museum exhibitions, or the dogs you've seen this week.</p>
+        <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a> if you want to chat about my work, museum exhibitions, or the dogs you've seen this week.</p>
         <p class="body">Or, get to know me better through my social media.</p>
       </div>
       <div class="row col xl4 offset-xl1 l5 m12 s12">

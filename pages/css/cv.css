@@ -33,12 +33,16 @@
 
 .title {
   font-size: 18px;
-  color: black;
   font-weight: bold;
   margin: 0 0 5px 0;
 }
 .title span {
   font-weight: normal;
+}
+
+.description {
+  font-size: 18px;
+  margin: 15px 0;
 }
 
 @media only screen and (max-width: 601px) {

@@ -97,6 +97,9 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
+.shadow {
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
 .caption {
   font-family: $input-font;
   font-size: $caption-size;
@@ -360,6 +363,9 @@ img {
   }
   .copyright, .caption, .button {
     font-size: $caption-small;
+  }
+  .caption {
+    margin: 6px 0;
   }
   .grid-sizer--width1, .grid-item--width1, .grid-sizer--width2, .grid-item--width2 {
     margin: 3%;

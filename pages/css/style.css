@@ -114,6 +114,7 @@ img {
 }
 .caption span {
   font-style: italic;
+  font-weight: bold;
 }
 
 .hide {

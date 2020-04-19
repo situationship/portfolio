@@ -114,7 +114,8 @@ img {
 .hide {
   display: none !important;
 }
-.navbar {
+#navbar {
+  background: white;
   text-align: right;
 	width: 100%;
   box-sizing: border-box;
@@ -124,7 +125,7 @@ img {
 	height: 65px;
 	overflow: hidden;
   z-index: 99;
-  background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+  transition: top $transition-speed;
 }
 .nav-logo, .nav-items {
   text-decoration: none;
@@ -175,6 +176,7 @@ img {
   right: 20px;
   z-index: 999;
   display: none;
+  transition: top $transition-speed;
 }
 .hamburger-menu:not(.collapsed) .icon-bar:nth-child(1) {
   transform: translateY(6px) rotate(45deg);

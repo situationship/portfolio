@@ -63,23 +63,16 @@ img.portrait {
 
 p.scroll {
   font-family: input-mono, monospace;
-}
-
-p.scroll, .fa-chevron-down {
   color: #A6A6A6;
   font-size: 16px;
-}
-
-.fa-chevron-down {
-  width: 18px;
-  margin: 0 2px;
-  padding: 6px 12px;
 }
 
 .bounce {
   margin: 0;
   padding: 0;
   animation: bounce 2s infinite;
+  color: #A6A6A6;
+  font-size: 16px;
 }
 
 @keyframes bounce {

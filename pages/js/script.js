@@ -1,3 +1,20 @@
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-65px";
+  }
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hamburgerMenu").style.top = "25px";
+  }
+  else {
+    document.getElementById("hamburgerMenu").style.top = "-65px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {

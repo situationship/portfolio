@@ -121,7 +121,8 @@ img {
   display: none !important;
 }
 
-.navbar {
+#navbar {
+  background: white;
   text-align: right;
   width: 100%;
   box-sizing: border-box;
@@ -131,7 +132,7 @@ img {
   height: 65px;
   overflow: hidden;
   z-index: 99;
-  background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+  transition: top 0.3s;
 }
 
 .nav-logo, .nav-items {
@@ -187,6 +188,7 @@ img {
   right: 20px;
   z-index: 999;
   display: none;
+  transition: top 0.3s;
 }
 
 .hamburger-menu:not(.collapsed) .icon-bar:nth-child(1) {

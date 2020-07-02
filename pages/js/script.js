@@ -14,7 +14,6 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -56,20 +55,22 @@ function toggleMenu() {
         opacity: "toggle"
     }, 300);
 }
-/*$(document).ready(function()
-{
-    $(".gif").hover(
-        function()
-        {
-          var src = $(this).attr("src");
-          $(this).attr("src", src.replace(/\.png$/i, ".gif"));
-        },
-        function()
-        {
-          var src = $(this).attr("src");
-          $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+window.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
         });
-});*/
+    });
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });
+});
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   percentPosition: true,
@@ -78,4 +79,17 @@ var $grid = $('.grid').masonry({
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
+});
+new Freezeframe('.freezeframe-hover', {
+    trigger: 'hover',
+    overlay: false
+});
+new Freezeframe('.freezeframe-clickoverlay', {
+    trigger: 'click',
+    overlay: true,
+    responsive: true
+});
+new Freezeframe('.freezeframe-dontstop', {
+    trigger: 'hover',
+    overlay: false
 });

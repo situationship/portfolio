@@ -2,21 +2,21 @@ $header-size: 40px;
 $body-size: 18px;
 $header-small: 36px;
 $accent-color: #FF3B4A;
+$mono-font: source-code-pro, monospace;
 
 .error, .message {
   text-align: center;
   margin-top: 0;
 }
 .error {
-  font-family: input-mono, monospace;
+  font-family: $mono-font;
   font-weight: bold;
   font-size: 200px;
   color: $accent-color;
   margin-bottom: 25px;
 }
 .message {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: $header-size;
 }
 

@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159372369-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-159372369-1');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159372369-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-159372369-1');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gina Chee</title>
-  <meta name="image" property="og:image" content="https://ginachee.com/media/ginachee-thumbnail.png">
+  <meta name="image" property="og:image" content="https://ginachee.com/media/ginachee-thumbnail.jpg">
   <meta name="author" content="Gina Chee">
-  <meta property="og:description" content="Hello! My name is Gina. I am a visual designer & artist based in NYC. Click here to view my portfolio!"/>
+  <meta property="og:description" content="Hey there, my name is Gina. I am a product designer & artist based in NYC. Click here to view my portfolio!"/>
   <meta name="pinterest" content="nopin">
   <link rel="apple-touch-icon" sizes="180x180" href="media\favicon\apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="media\favicon\favicon-32x32.png">
@@ -29,58 +22,60 @@
   <script src="pages\js\pace.js"></script>
 </head>
 <body>
-  <nav id="navbar">
-    <a href="/" title="Gina Chee"><img class="nav-logo" src="media\logo.svg" alt="Gina Chee logo"/></a>
-    <ul class="nav-items">
-      <li><a href="/">Design</a></li>
-      <li><a href="/art">Art</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/cv">CV</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </div>
-  <div class="mobile-overlay">
-    <ul class="mobile-nav-items">
-      <li><a href="/">Design</a></li>
-      <li><a href="/art">Art</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/cv">CV</a></li>
-    </ul>
-  </div>
+<nav id="navbar">
+  <a href="/" title="Gina Chee"><figure class="nav-logo"><img class="swap__front" src="media/monogram.svg" alt="Gina Chee logo"><img class="swap__back" src="media/monogram-red.svg" alt="Gina Chee logo"></figure></a>
+  <ul class="nav-items">
+    <li><a href="/">Design</a></li>
+    <li><a href="/art">Art</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul>
+</nav>
+<div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</div>
+<div class="mobile-overlay">
+  <ul class="mobile-nav-items">
+    <li><a href="/">Design</a></li>
+    <li><a href="/art">Art</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul>
+</div>
 
 <div id="intro">
-  <div class="container3">
+  <div class="container-s">
     <div class="row row-intro">
-      <div class="col m6 s10 offset-s1">
-        <h2 class="hello">Hello! My name is</h2>
-        <h1 class="name"><span class="animation"><a href="/about" title="About">Gina</a></span>.</h1>
-        <h3 class="description">I am a <a href="/spicy" title="Spice Rack">visual designer</a> and <a href="/art" title="Artworks">artist</a> based in NYC.</h3>
+      <div class="col xl9 l10 m12 s10 offset-s1">
+        <h1 class="hello">Hey there, my name is <span><a href="/about" title="About">Gina</a></span>. 👋🏼</h1>
+        <div class="col l8 m7 s12" style="padding:0;margin:0;">
+          <h2 class="description">I am a <a href="#portfolio">product designer</a> and <a href="/art" title="Artworks">artist</a> based in NYC.</h2>
+        </div>
+        <div class="col s12" style="padding:0;margin:0;">
+          <p class="hint">HINT: Hover over the image next to the waving emoji to see some moving picture magic!</p>
+        </div>
       </div>
-      <div class="col m5 offset-m1">
-        <img class="portrait" src="media\self-portrait-min.png" alt="Gina Chee">
-      </div>
+      <div class="col xl3 l2"><div class="freezeframe-dontstop"><img class="animation" src="media\sparkle-min.gif" alt="Animation of sparkles"></div></div>
     </div>
   </div>
-  <a class="arrow" href="#portfolio">
-        <div class="action-down">
-            <p class="scroll">View my work!</p>
-            <div class="bounce"><i class="fas fa-chevron-down"></i></div>
-        </div>
+  <div class="action-down">
+    <a class="arrow" href="#portfolio">
+      <p class="scroll">View my work!</p>
+      <div class="bounce"><i class="fas fa-chevron-down"></i></div>
     </a>
+  </div>
 </div>
 
 <ul id="portfolio">
-  <div class="container0">
+  <div class="container-xxl">
     <div class="grid">
       <div class="grid-sizer grid-sizer--width2"></div>
       <div class="grid-item grid-item--width2 content">
         <a href="/nyu-facilities">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\NYU-Facilities-min.png" alt="NYU Facilities Portal">
+          <img class="content-image" src="media\thumbnails\NYU-Facilities-min.png" alt="Web and mobile screen of a client service feature">
           <div class="content-details fadeIn-top">
             <h3>NYU Facilities Portal</h3>
             <p>UX Case Study</p>
@@ -90,7 +85,7 @@
       <div class="grid-item grid-item--width2 content">
         <a href="/pink-tax">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\The-Pink-Tax-min.png" alt="Case Study: The Pink Tax">
+          <img class="content-image" src="media\thumbnails\The-Pink-Tax-min.png" alt="Mobile screens of an app addressing the pink tax">
           <div class="content-details fadeIn-top">
             <h3>ThinkPink</h3>
             <p>UX Case Study</p>
@@ -100,17 +95,17 @@
       <div class="grid-item grid-item--width2 content">
         <a href="/wake-me-up-at">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\Wake-Me-Up-At-min.png" alt="Wake Me Up At...">
+          <img class="content-image" src="media\thumbnails\Wake-Me-Up-At-min.png" alt="Mockup of 4 sleeping masks with different subway stops printed on each one">
           <div class="content-details fadeIn-top">
             <h3>Wake Me Up At...</h3>
-            <p>Product Design</p>
+            <p>Physical Product Design</p>
           </div>
         </a>
       </div>
       <div class="grid-item grid-item--width2 content">
         <a href="/united">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\United-Airlines-min.png" alt="United Airlines">
+          <img class="content-image" src="media\thumbnails\United-Airlines-min.png" alt="Web mockups of internal application for United Airlines">
           <div class="content-details fadeIn-top">
             <h3>United Airlines</h3>
             <p>Internship Overview</p>
@@ -120,7 +115,7 @@
       <div class="grid-item grid-item--width2 content">
         <a href="/ipo">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\IPO-App-min.png" alt="IPO App">
+          <img class="content-image" src="media\thumbnails\IPO-App-min.png" alt="Mobile screens for an app that tracks IPOs">
           <div class="content-details fadeIn-top">
             <h3>IPOcket</h3>
             <p>Prototyping & UI Design</p>
@@ -128,19 +123,9 @@
         </a>
       </div>
       <div class="grid-item grid-item--width2 content">
-        <a href="/viewtrade">
-          <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\ViewTrade-Institutional-min.png" alt="ViewTrade Institutional">
-          <div class="content-details fadeIn-top">
-            <h3>ViewTrade Institutional</h3>
-            <p>Branding & Print Design</p>
-          </div>
-        </a>
-      </div>
-      <div class="grid-item grid-item--width2 content">
         <a href="/spicy">
           <div class="content-overlay"></div>
-          <img class="content-image" src="media\thumbnails\spice-rack-min.gif" alt="Spice Rack">
+          <img class="content-image" src="media\thumbnails\spice-rack-min.gif" alt="Gif preview of different motion-related passion projects">
           <div class="content-details fadeIn-top">
             <h3>Spice Rack</h3>
             <p>Miscellaneous Passion Projects</p>
@@ -150,34 +135,36 @@
     </div>
   </div>
 </ul>
-<div class="container2">
+<div class="container-m">
   <footer class="footer-bar">
-    <div class="row row-paragraph">
+    <div class="row row-section">
       <div class="row col l7 m12 s12">
         <p class="subheader">Interested in learning more?</p>
         <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a> if you want to chat about my work, museum exhibitions, or the dogs you've seen this week.</p>
         <p class="body">Or, get to know me better through my other platforms.</p>
       </div>
-      <div class="row col xl4 offset-xl1 l5 m12 s12">
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m12 s12">
         <p class="subheader">Let's connect:</p>
         <a href="https://www.linkedin.com/in/ginachee/" class="fab fa-linkedin-in" title="LinkedIn" target="_blank"></a>
         <a href="https://instagram.com/ginacheee" class="fab fa-instagram" title="Instagram" target="_blank"></a>
         <a href="https://dribbble.com/ginachee" class="fab fa-dribbble" title="Dribbble" target="_blank"></a>
         <a href="https://www.behance.net/ginachee" class="fab fa-behance" title="Behance" target="_blank"></a>
-        <a href="https://vimeo.com/ginachee" class="fab fa-vimeo-v" title="Vimeo" target="_blank"></a>
       </div>
-      <div class="row col xl4 offset-xl1 l5 m12 s12">
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m12 s12">
         <p class="body back-to-top"><a href="#">Back to top <i class="fas fa-arrow-up"></i></a></p>
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <p class="copyright">&copy; 2020 Gina Chee, All Rights Reserved</p>
+        <p class="copyright" title="Designed and Developed by Gina Chee">&copy; 2020 Gina Chee, All Rights Reserved</p>
       </div>
     </div>
   </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="pages\js\script.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+<script src="pages/js/freezeframe.js"></script>
+<script src="pages/js/script.js"></script>
 </body>
 </html>

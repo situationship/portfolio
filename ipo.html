@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159372369-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-159372369-1');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159372369-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-159372369-1');</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IPOcket | Gina Chee</title>
@@ -27,177 +20,210 @@
   <script src="pages\js\pace.js"></script>
 </head>
 <body>
-  <nav id="navbar">
-    <a href="/" title="Gina Chee"><img class="nav-logo" src="media\logo.svg" alt="Gina Chee logo"/></a>
-    <ul class="nav-items">
-      <li><a href="/">Design</a></li>
-      <li><a href="/art">Art</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/cv">CV</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </div>
-  <div class="mobile-overlay">
-    <ul class="mobile-nav-items">
-      <li><a href="/">Design</a></li>
-      <li><a href="/art">Art</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/cv">CV</a></li>
-    </ul>
-  </div>
+<nav id="navbar">
+  <a href="/" title="Gina Chee"><figure class="nav-logo"><img class="swap__front" src="media/monogram.svg" alt="Gina Chee logo"><img class="swap__back" src="media/monogram-red.svg" alt="Gina Chee logo"></figure></a>
+  <ul class="nav-items">
+    <li><a href="/">Design</a></li>
+    <li><a href="/art">Art</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul>
+</nav>
+<div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</div>
+<div class="mobile-overlay">
+  <ul class="mobile-nav-items">
+    <li><a href="/">Design</a></li>
+    <li><a href="/art">Art</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul>
+</div>
 
-<img src="media\ipo\ipo-app-header-min.png" alt="IPOcket by Gina Chee">
-<div class="container2">
-  <p class="header">IPOcket</p>
-  <div class="row row-tagline">
-    <div class="col l5 m12">
-      <p class="tagline">Track, manage, and invest in IPOs.</p>
-    </div>
-    <div class="col l2 offset-l1 m4 s4">
-      <ul class="specs">
-        <li><p class="specs-title">Strategies:</p></li>
-        <li><p class="specs-list">UX / UI Design</p></li>
-        <li><p class="specs-list">Prototyping</p></li>
-      </ul>
-    </div>
-    <div class="col l2 m4 s4">
-      <ul class="specs">
-        <li><p class="specs-title">Timeline:</p></li>
-        <li><p class="specs-list">Jun - Aug 2018</p></li>
-      </ul>
-    </div>
-    <div class="col l2 m4 s4">
-      <ul class="specs">
-        <li><p class="specs-title">Tools used:</p></li>
-        <li><p class="specs-list">Adobe XD</p></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">As a visual design intern at ViewTrade Securities Inc., my biggest project during that summer was designing the user interface for an upcoming app the company is launching.</p>
-      <p class="body">IPOcket (a placeholder name, pronounced like iPocket) is a tracking service for IPOs, and allows users to view, follow, and invest in upcoming IPOs. We wanted to create something better than the already existing apps in the market, aiming for a smooth interactive experience for our users with a cleaner visual layout and user flow, with more data that would help investors learn about the companies more.</p>
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col l5 offset-l1 m7 s12">
-      <p class="subheader">Home page</p>
-      <p class="body">This current iteration is based on Google's interface guidelines, <a href="https://material.io" target="_blank">Material Design</a>. A previous iteration that was made before my internship began had also followed this interface. On the home page of the app (shown on the left), users can a preview of the latest IPO news, view a selection of upcoming IPOs, and view a selection of recently priced IPOs. Under each section has button that allows users to view more from that section.</p>
-    </div>
-    <div class="col l4 offset-l1 m4 offset-m1 s6 offset-s3">
-      <img src="media\ipo\home-screen-min.png" alt="Home page of IPO app">
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">News, Upcoming IPOs, and Recently Priced IPOs pages</p>
-      <p class="body">On the home page, there are three categories that users can look into: News, Upcoming IPOS, and Recently Priced IPOS. The home page only previews a small portion of content from each section, but users can click the "View more" buttons to direct to more from that section. Underneath the "Upcoming IPOs" and "Recently Priced IPOs" sections there is an option to filter through the IPOs based on release date, size of the offer amount, and industry.</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\news-min.png" alt="News page of IPO app">
-      <p class="caption">Full news section</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\upcoming-ipos-min.png" alt="Upcoming IPOs page of IPO app">
-      <p class="caption">Full upcoming IPOs section</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\recent-ipos-min.png" alt="Recently priced IPOs of IPO app">
-      <p class="caption">Full recently priced IPOs section</p>
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">Company info pages</p>
-      <p class="body">The biggest purpose of the app is to allow users to learn about the companies issuing IPOs, so of course, the company pages were the most important. The biggest challenge was to fit all the important company information without ruining the design and overwhelming the users. To resolve this, information is categorized into four different tabs, and each tab is separated by cards, with an optional view more button to keep the text from cluttering the screen.</p>
-    </div>
-    <div class="row col m4 offset-m2 s5 offset-s1">
-      <img src="media\ipo\company-info-min.png" alt="Company info page of IPO app">
-      <p class="caption">1. General company information</p>
-    </div>
-    <div class="row col m4 s5">
-      <img src="media\ipo\company-financial-min.png" alt="Company financial page of IPO app">
-      <p class="caption">2. In-depth financial description</p>
-    </div>
-    <div class="row col m4 offset-m2 s5 offset-s1">
-      <img src="media\ipo\company-news-min.png" alt="Company news page of IPO app">
-      <p class="caption">3. Company news</p>
-    </div>
-    <div class="row col m4 s5">
-      <img src="media\ipo\company-social-media-min.png" alt="Company social media page of IPO app">
-      <p class="caption">4. Social media updates</p>
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">Purchase process</p>
-      <p class="body">On each company page, a floating action button appears as an option for users to place an order. Orders can also be updated up until the release date.</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\purchase1-min.png" alt="Placing an order on IPO app - 1">
-      <p class="caption">1. Place order button will appear when "+" button is pressed</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\purchase2-min.png" alt="Placing an order on IPO app - 2">
-      <p class="caption">2. Users can place an order when connected to bank account</p>
-    </div>
-    <div class="col s4">
-      <img src="media\ipo\purchase3-min.png" alt="Placing an order on IPO app - 3">
-      <p class="caption">3. Orders will be saved through the app, and updates can be made</p>
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">Other features</p>
-      <p class="body">Other features of the app includes creating an account, keeping a watchlist, getting notifications about certain IPOs, and a new feature that isn't available competing apps which is an option to filter through IPOs based on what industry they fall under.</p>
-    </div>
-  </div>
-  <div class="row row-paragraph">
-    <div class="col xl8 offset-xl2 l10 offset-l1 m12 s12">
-      <p class="subheader">Conclusion</p>
-      <p class="body">This work was a collaboration between the coding department of ViewTrade and me. I was the user interface designer, and would communicate my designs to the developers with the help of Adobe XD. If you're interested, you can view and interact with the full interface <a href="https://xd.adobe.com/view/2446008f-ac2f-4b02-4bab-85d7b54349e5-5277/" title="IPO App on Adobe XD" target="_blank">here</a>.</p>
-    </div>
-  </div>
+<img src="media\ipo\ipo-app-header-min.png" alt="Mobile screens for an app that tracks IPOs by Gina Chee">
+<div class="sticky">
+  <nav class="section-nav">
+    <ol class="scrollspy-order">
+      <li class="scrollspy"><a href="#intro">📈</a></li>
+      <li class="scrollspy"><a href="#overview">Overview</a></li>
+      <li class="scrollspy"><a href="#landing">Landing Page</a></li>
+      <li class="scrollspy"><a href="#news-upcoming-recent">News, Upcoming IPOs, and Recently Priced IPOs</a></li>
+      <li class="scrollspy"><a href="#company">Company Info</a></li>
+      <li class="scrollspy"><a href="#purchasing">Purchasing Process</a></li>
+      <li class="scrollspy"><a href="#other-features">Other Features</a></li>
+      <li class="scrollspy"><a href="#conclusion">Conclusion</a></li>
+    </ol>
+  </nav>
 </div>
-<div class="container2">
-  <div class="row row-paragraph">
-    <div class="col xl4 push-xl8 l5 push-l7 m6 push-m6 s12">
-      <p class="subheader subheader-right">Next project:</p>
-      <a href="/viewtrade"><button class="button button-right">ViewTrade Institutional&emsp;<i class="fas fa-chevron-right"></i></button></a>
+<div class="container-m">
+  <section id="intro">
+    <p class="header">IPOcket</p>
+    <div class="row row-tagline">
+      <div class="col l5 m12">
+        <p class="tagline">Track, manage, and invest in IPOs.</p>
+      </div>
+      <div class="col l2 offset-l1 m4 s4">
+        <ul class="specs">
+          <li><p class="specs-title">Strategies:</p></li>
+          <li><p class="specs-list">UX / UI Design</p></li>
+          <li><p class="specs-list">Prototyping</p></li>
+        </ul>
+      </div>
+      <div class="col l2 m4 s4">
+        <ul class="specs">
+          <li><p class="specs-title">Timeline:</p></li>
+          <li><p class="specs-list">Jun - Aug 2018</p></li>
+        </ul>
+      </div>
+      <div class="col l2 m4 s4">
+        <ul class="specs">
+          <li><p class="specs-title">Tools used:</p></li>
+          <li><p class="specs-list">Adobe XD</p></li>
+        </ul>
+      </div>
+      <div class="col s12">
+        <div class="specs-mobile">
+          <p><b>Strategies:</b> UX / UI Design, Prototyping</p>
+          <p><b>Timeline:</b> Jun - Aug 2018</p>
+          <p><b>Tools used:</b> Adobe XD</p>
+        </div>
+      </div>
     </div>
-    <div class="col xl4 pull-xl4 l5 pull-l5 m6 pull-m6 s12">
-      <p class="subheader subheader-left">Previous project:</p>
-      <a href="/united"><button class="button button-left"><i class="fas fa-chevron-left"></i>&emsp;United Airlines</button></a>
+  </section>
+  <section id="overview">
+    <div class="row">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">IPOcket (a placeholder name, pronounced like iPocket) is a tracking service for IPOs, and allows users to view, follow, and invest in upcoming IPOs.</p>
+        <p class="body">This was a project I worked on during my internship at ViewTrade, where I was the lead visual designer.</p>
+      </div>
     </div>
-  </div>
-</div>
-<div class="container2">
-  <footer class="footer-bar">
+  </section>
+  <section id="landing">
     <div class="row row-paragraph">
+      <div class="col l5 offset-l1 m7 s12">
+        <p class="subheader">Landing Page</p>
+        <p class="body">On the home page of the app (shown on the left), users can a preview of the latest IPO news, view a selection of upcoming IPOs, and view a selection of recently priced IPOs.</p>
+      </div>
+      <div class="col l4 offset-l1 m4 offset-m1 s6 offset-s3">
+        <img src="media\ipo\home-screen-min.png" alt="Home page of IPOcket">
+      </div>
+    </div>
+  </section>
+  <section id="news-upcoming-recent">
+    <div class="row row-paragraph">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">News, Upcoming IPOs, and Recently Priced IPOs</p>
+        <p class="body">On the home page, there are three categories that users can look into: News, Upcoming IPOS, and Recently Priced IPOS. The home page only previews a small portion of content from each section, but users can click the "View more" buttons to direct to more from that section. Underneath the "Upcoming IPOs" and "Recently Priced IPOs" sections there is an option to filter through the IPOs based on release date, size of the offer amount, and industry.</p>
+      </div>
+      <div class="col m4 s6">
+        <img src="media\ipo\news-min.png" alt="News page of IPOcket">
+        <p class="caption">Full news section</p>
+      </div>
+      <div class="col m4 s6">
+        <img src="media\ipo\upcoming-ipos-min.png" alt="Upcoming IPOs page of IPOcket">
+        <p class="caption">Full upcoming IPOs section</p>
+      </div>
+      <div class="col m4 s6 offset-s3">
+        <img src="media\ipo\recent-ipos-min.png" alt="Recently priced IPOs of IPOcket">
+        <p class="caption">Full recently priced IPOs section</p>
+      </div>
+    </div>
+  </section>
+  <section id="company">
+    <div class="row row-paragraph">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">Company Info</p>
+        <p class="body">The biggest purpose of the app is to allow users to learn about the companies issuing IPOs, so of course, the company pages were the most important. The biggest challenge was to fit all the important company information without ruining the design and overwhelming the users. To resolve this, information is categorized into four different tabs, and each tab is separated by cards, with an optional view more button to keep the text from cluttering the screen.</p>
+      </div>
+      <div class="row col m4 offset-m2 s6">
+        <img src="media\ipo\company-info-min.png" alt="Company info page of IPOcket">
+        <p class="caption">1. General company information</p>
+      </div>
+      <div class="row col m4 s6">
+        <img src="media\ipo\company-financial-min.png" alt="Company financial page of IPOcket">
+        <p class="caption">2. In-depth financial description</p>
+      </div>
+      <div class="row col m4 offset-m2 s6">
+        <img src="media\ipo\company-news-min.png" alt="Company news page of IPOcket">
+        <p class="caption">3. Company news</p>
+      </div>
+      <div class="row col m4 s6">
+        <img src="media\ipo\company-social-media-min.png" alt="Company social media page of IPOcket">
+        <p class="caption">4. Social media updates</p>
+      </div>
+    </div>
+  </section>
+  <section id="purchasing">
+    <div class="row row-paragraph">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">Purchasing Process</p>
+        <p class="body">On each company page, a floating action button appears as an option for users to place an order. Orders can also be updated up until the release date.</p>
+      </div>
+      <div class="col m4 s6">
+        <img src="media\ipo\purchase1-min.png" alt="Placing an order on IPOcket - 1">
+        <p class="caption">1. Place order button will appear when "+" button is pressed</p>
+      </div>
+      <div class="col m4 s6">
+        <img src="media\ipo\purchase2-min.png" alt="Placing an order on IPOcket - 2">
+        <p class="caption">2. Users can place an order when connected to bank account</p>
+      </div>
+      <div class="col m4 s6 offset-s3">
+        <img src="media\ipo\purchase3-min.png" alt="Placing an order on IPOcket - 3">
+        <p class="caption">3. Orders will be saved through the app, and updates can be made</p>
+      </div>
+    </div>
+  </section>
+  <section id="other-features">
+    <div class="row row-paragraph">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">Other features</p>
+        <p class="body">Other features of the app includes creating an account, keeping a watchlist, getting notifications about certain IPOs, and a new feature that isn't available competing apps which is an option to filter through IPOs based on what industry they fall under.</p>
+      </div>
+    </div>
+  </section>
+  <section id="conclusion">
+    <div class="row row-paragraph">
+      <div class="col l10 offset-l1 m12 s12">
+        <p class="subheader">Conclusion</p>
+        <p class="body">This work was a collaboration between developers of ViewTrade. I was the user interface designer, and would communicate my designs to the developers with the help of Adobe XD.</p>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="container-m">
+  <div class="row row-section"><div class="col s12"><p class="subheader">Check out some other projects:</p></div>
+    <div class="col l4 m6 s12"><a href="/spicy"><button class="bottom-nav">🌶️&ensp;Spice Rack</button></a></div>
+    <div class="col l4 m6 s12"><a href="/nyu-facilities"><button class="bottom-nav">🛠️&ensp;NYU Facilities Portal</button></a></div>
+    <div class="col l4 m6 s12"><a href="/pink-tax"><button class="bottom-nav">🛍️&ensp;ThinkPink</button></a></div>
+    <div class="col l4 m6 s12"><a href="/wake-me-up-at"><button class="bottom-nav">😴&ensp;Wake Me Up At...</button></a></div>
+    <div class="col l4 m6 s12"><a href="/united"><button class="bottom-nav">✈️&ensp;United Airlines</button></a></div>
+  </div>
+</div>
+<div class="container-m">
+  <footer class="footer-bar">
+    <div class="row row-section">
       <div class="row col l7 m12 s12">
         <p class="subheader">Interested in learning more?</p>
         <p class="body">Shoot me an email at <a href="mailto:ginachee@nyu.edu" title="Email" target="_blank">ginachee@nyu.edu</a> if you want to chat about my work, museum exhibitions, or the dogs you've seen this week.</p>
         <p class="body">Or, get to know me better through my other platforms.</p>
       </div>
-      <div class="row col xl4 offset-xl1 l5 m12 s12">
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m12 s12">
         <p class="subheader">Let's connect:</p>
         <a href="https://www.linkedin.com/in/ginachee/" class="fab fa-linkedin-in" title="LinkedIn" target="_blank"></a>
         <a href="https://instagram.com/ginacheee" class="fab fa-instagram" title="Instagram" target="_blank"></a>
         <a href="https://dribbble.com/ginachee" class="fab fa-dribbble" title="Dribbble" target="_blank"></a>
         <a href="https://www.behance.net/ginachee" class="fab fa-behance" title="Behance" target="_blank"></a>
-        <a href="https://vimeo.com/ginachee" class="fab fa-vimeo-v" title="Vimeo" target="_blank"></a>
       </div>
-      <div class="row col xl4 offset-xl1 l5 m12 s12">
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m12 s12">
         <p class="body back-to-top"><a href="#">Back to top <i class="fas fa-arrow-up"></i></a></p>
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <p class="copyright">&copy; 2020 Gina Chee, All Rights Reserved</p>
+        <p class="copyright" title="Designed and Developed by Gina Chee">&copy; 2020 Gina Chee, All Rights Reserved</p>
       </div>
     </div>
   </footer>

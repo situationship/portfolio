@@ -2,9 +2,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+    document.getElementById("navItems").style.top = "0px";
   } else {
-    document.getElementById("navbar").style.top = "-65px";
+    document.getElementById("navItems").style.top = "-65px";
   }
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("hamburgerMenu").style.top = "25px";

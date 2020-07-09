@@ -7,6 +7,7 @@ $header-small: 36px;
 $subheader-small: 21px;
 $body-small: 16px;
 $caption-small: 12px;
+$header-xs: 30px;
 $accent-color: #FF3B4A;
 $gray-color: #757575;
 $transition-speed: 0.3s;
@@ -463,5 +464,10 @@ img {
   }
   .button-image {
     height:100px;
+  }
+}
+@media only screen and (max-width: 361px) {
+  .header, .tagline {
+    font-size: $header-xs;
   }
 }

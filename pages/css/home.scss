@@ -6,6 +6,7 @@ $hello-small: 36px;
 $subheader-small: 21px;
 $body-small: 16px;
 $caption-small: 12px;
+$hello-xs: 30px;
 $accent-color: #FF3B4A;
 $gray-color: #757575;
 $transition-speed: 0.3s;
@@ -227,5 +228,10 @@ p.scroll {
   }
   .content-details p, p.scroll, .fa-chevron-down {
     font-size: $caption-small;
+  }
+}
+@media only screen and (max-width: 361px) {
+  h1.hello {
+    font-size: $hello-xs;
   }
 }

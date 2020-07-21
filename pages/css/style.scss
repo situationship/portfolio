@@ -27,10 +27,6 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 60px 0 0 0;
-  span {
-    font-weight: $bold;
-    color: $accent-color;
-  }
 }
 b {
   font-weight: $bold;
@@ -93,6 +89,10 @@ b {
 }
 .body, li {
   font-size: $body-size;
+  span {
+    font-weight: $bold;
+    color: $accent-color;
+  }
 }
 a {
   color: $accent-color;
@@ -126,6 +126,7 @@ img {
   span {
     font-style: italic;
     font-weight: bold;
+    color: $gray-color;
   }
 }
 

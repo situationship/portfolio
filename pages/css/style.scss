@@ -24,7 +24,7 @@ body {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
   font-style: normal;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
   padding: 60px 0 0 0;
 }
@@ -391,7 +391,7 @@ img {
   margin: 12px 0;
 }
 .tagline {
-  font-size: $header-size;
+  font-size: $header-small;
   color: $gray-color;
   font-family: $mono-font;
 }
@@ -435,8 +435,11 @@ img {
   .nav-items, .specs  {
     display: none;
   }
-  .header, .tagline {
+  .header {
     font-size: $header-small;
+  }
+  .tagline {
+    font-size: $subheader-size;
   }
   .subheader {
     font-size: $subheader-small;

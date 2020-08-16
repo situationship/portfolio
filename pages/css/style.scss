@@ -95,10 +95,11 @@ b {
   }
 }
 a {
-  color: $accent-color;
+  color: $gray-color;
+  text-decoration-style: dotted;
   &:hover {
     transition: $transition-speed;
-    color: $gray-color;
+    color: $accent-color;
   }
 }
 .hint {
@@ -310,11 +311,11 @@ img {
   margin: 10px 0;
   cursor: pointer;
   box-shadow: $shadow;
-  color: $accent-color;
+  color: $gray-color;
   font-size: $body-size;
   border-radius: $rounded-border;
   &:hover {
-    color: $gray-color;
+    color: $accent-color;
     transition: $transition-speed;
   }
 }
@@ -338,10 +339,11 @@ img {
     }
   }
 }
-.back-to-top, .fa-arrow-up {
-  padding: 0;
-  font-size: $body-size;
-  text-decoration: underline;
+.back-to-top a {
+  color: $accent-color;
+  &:hover {
+    color: $gray-color;
+  }
 }
 .copyright {
   font-family: $mono-font;

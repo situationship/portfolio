@@ -92,6 +92,12 @@ b {
   span {
     font-weight: $bold;
     color: $accent-color;
+    a {
+      color: $accent-color;
+      &:hover {
+        color: $gray-color;
+      }
+    }
   }
 }
 a {
@@ -128,6 +134,9 @@ img {
     font-style: italic;
     font-weight: bold;
     color: $gray-color;
+  }
+  a {
+    text-underline-position: under;
   }
 }
 

@@ -1,3 +1,65 @@
+//smooth scroll
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+});
+//smooth scroll
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+//disable drag on images
+$('img').on('dragstart', function(event) { event.preventDefault(); });
+$('img').bind('contextmenu', function(e) {
+    return false;
+});
+//responsive header
+function toggleMenu() {
+    $("#hamburgerMenu").toggleClass("collapsed");
+    $(".mobile-overlay").animate({
+        height: "toggle",
+        opacity: "toggle"
+    }, 300);
+}
+window.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+        });
+    });
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });
+});
+//hide header on scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -8,6 +70,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+//rotating logo on scroll
 ;(function() {
     var throttle = function(type, name, obj) {
         var obj = obj || window;
@@ -30,63 +93,7 @@ window.addEventListener("scroll", function() {
     logofront.style.transform = "rotate("+(window.pageYOffset*0.1)+"deg)";
     logoback.style.transform = "rotate("+(window.pageYOffset*0.1)+"deg)";
 });
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-            // Store hash
-            var hash = this.hash;
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 500, function(){
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
-});
-jQuery(document).ready(function() {
-        var offset = 220;
-        var duration = 500;
-        jQuery('.back-to-top').click(function(event) {
-            event.preventDefault();
-            jQuery('html, body').animate({scrollTop: 0}, duration);
-            return false;
-        })
-    });
-$('img').on('dragstart', function(event) { event.preventDefault(); });
-$('img').bind('contextmenu', function(e) {
-    return false;
-});
-function toggleMenu() {
-  $("#hamburgerMenu").toggleClass("collapsed");
-  $(".mobile-overlay").animate({
-        height: "toggle",
-        opacity: "toggle"
-    }, 300);
-}
-window.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-            } else {
-                document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.remove('active');
-            }
-        });
-    });
-    // Track all sections that have an `id` applied
-    document.querySelectorAll('section[id]').forEach((section) => {
-        observer.observe(section);
-    });
-});
+//play gif on command
 new Freezeframe('.freezeframe-hover', {
     trigger: 'hover',
     overlay: false
@@ -109,6 +116,7 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+//tabs on spice rack
 function spiceCategory(evt, categoryName) {
     var i, tabcontent, filter;
     tabcontent = document.getElementsByClassName("tabcontent");

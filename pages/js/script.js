@@ -59,17 +59,6 @@ window.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
-//hide header on scroll
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navItems").style.top = "0px";
-  } else {
-    document.getElementById("navItems").style.top = "-65px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 //rotating logo on scroll
 ;(function() {
     var throttle = function(type, name, obj) {

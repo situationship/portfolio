@@ -121,6 +121,9 @@ img {
   -webkit-user-select: none;
   user-select: none;
 }
+.round {
+  border-radius:8px;
+}
 .shadow {
   box-shadow: $shadow;
   border-radius: $rounded-border;
@@ -311,7 +314,7 @@ img {
   padding: 4px 0;
   font-size: $caption-size;
 }
-.bottom-nav {
+.bottom-nav, .tab button {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -331,6 +334,15 @@ img {
     transition: $transition-speed;
   }
 }
+.tab button.active {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: none;
+  outline: none;
+  &:hover {
+    color: $gray-color;
+  }
+}
+
 .footer-bar {
   margin: 80px 0 50px 0;
   .fa-envelope, .fa-linkedin-in, .fa-instagram, .fa-vimeo-v, .fa-github, .fa-dribbble, .fa-behance {
@@ -363,7 +375,7 @@ img {
   color: $gray-color;
   margin-top: 50px;
 }
-.grid {
+.grid, .tabcontent {
   margin-left: auto;
   margin-right: auto;
   &:after {
@@ -449,7 +461,7 @@ img {
   .nav-items, .specs  {
     display: none;
   }
-  .header {
+  .header{
     font-size: $header-small;
   }
   .tagline {
@@ -483,9 +495,6 @@ img {
   }
   .row-tagline {
     padding:20px 0
-  }
-  .button-image {
-    height:100px;
   }
 }
 @media only screen and (max-width: 361px) {

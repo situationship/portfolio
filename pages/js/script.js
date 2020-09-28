@@ -6,14 +6,30 @@ window.onscroll = function() {
   } else {
     document.getElementById("navItems").style.top = "-65px";
   }
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("hamburgerMenu").style.top = "25px";
-  }
-  else {
-    document.getElementById("hamburgerMenu").style.top = "-65px";
-  }
   prevScrollpos = currentScrollPos;
 }
+;(function() {
+    var throttle = function(type, name, obj) {
+        var obj = obj || window;
+        var running = false;
+        var func = function() {
+            if (running) { return; }
+            running = true;
+            requestAnimationFrame(function() {
+                obj.dispatchEvent(new CustomEvent(name));
+                running = false;
+            });
+        };
+        obj.addEventListener(type, func);
+    };
+    throttle ("scroll", "optimizedScroll");
+})();
+var logofront = document.getElementById("logo-front"),
+    logoback = document.getElementById("logo-back");
+window.addEventListener("scroll", function() {
+    logofront.style.transform = "rotate("+(window.pageYOffset*0.1)+"deg)";
+    logoback.style.transform = "rotate("+(window.pageYOffset*0.1)+"deg)";
+});
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -71,15 +87,6 @@ window.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});
 new Freezeframe('.freezeframe-hover', {
     trigger: 'hover',
     overlay: false
@@ -93,3 +100,28 @@ new Freezeframe('.freezeframe-dontstop', {
     trigger: 'hover',
     overlay: false
 });
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+function spiceCategory(evt, categoryName) {
+    var i, tabcontent, filter;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    filter = document.getElementsByClassName("filter");
+    for (i = 0; i < filter.length; i++) {
+        filter[i].className = filter[i].className.replace(" active", "");
+    }
+    document.getElementById(categoryName).style.display = "block";
+    evt.currentTarget.className += " active";
+    $grid.masonry()
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

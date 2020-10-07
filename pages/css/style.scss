@@ -101,11 +101,11 @@ b {
   }
 }
 a {
-  color: $gray-color;
+  color: $accent-color;
   text-decoration-style: dotted;
   &:hover {
     transition: $transition-speed;
-    color: $accent-color;
+    color: $gray-color;
   }
 }
 .hint {
@@ -296,10 +296,10 @@ img {
   text-decoration: none;
   display: block;
   padding: .125rem 0;
-  color: $gray-color;
+  color: $accent-color;
   transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
   &:hover, &:focus {
-    color: $accent-color;
+    color: $gray-color;
     transition: $transition-speed;
     font-weight: bold;
   }

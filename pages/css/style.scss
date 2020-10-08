@@ -296,10 +296,10 @@ img {
   text-decoration: none;
   display: block;
   padding: .125rem 0;
-  color: $accent-color;
+  color: $gray-color;
   transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
   &:hover, &:focus {
-    color: $gray-color;
+    color: $accent-color;
     transition: $transition-speed;
     font-weight: bold;
   }

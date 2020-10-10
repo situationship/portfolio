@@ -18,6 +18,7 @@
   <meta name="theme-color" content="#ffffff">
   <link href="pages/css/home.css" rel="stylesheet">
   <link href="pages/css/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a3e9cdedbf.js" crossorigin="anonymous"></script>
   <script src="pages/js/pace.js"></script>
 </head>
@@ -44,7 +45,7 @@
     <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
   </ul>
 </div>
-<div id="intro">
+<div id="intro" data-aos="fade-up" data-aos-duration="1500">
   <div class="container-s">
     <div class="row row-intro">
       <div class="col xl9 l10 m12 s10 offset-s1">
@@ -69,7 +70,7 @@
 
 <ul id="portfolio">
   <div class="container-xxl">
-    <div class="grid">
+    <div class="grid" data-aos="fade-up" data-aos-duration="1500">
       <div class="grid-sizer grid-sizer--width2"></div>
       <div class="grid-item grid-item--width2 content">
         <a href="/nyu-facilities">
@@ -125,7 +126,7 @@
   </div>
 </ul>
 <div class="container-m">
-  <footer class="footer-bar">
+  <footer class="footer-bar" data-aos="fade-up" data-aos-duration="1500">
     <div class="row row-section">
       <div class="row col l7 m12 s12">
         <h2 class="subheader">Interested in learning more?</h2>
@@ -154,5 +155,7 @@
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 <script src="pages/js/freezeframe.js"></script>
 <script src="pages/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

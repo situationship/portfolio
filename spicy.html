@@ -18,6 +18,7 @@
     <meta name="theme-color" content="#ffffff">
     <link href="pages/css/home.css" rel="stylesheet">
     <link href="pages/css/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3e9cdedbf.js" crossorigin="anonymous"></script>
     <script src="pages/js/pace.js"></script>
 </head>
@@ -45,13 +46,13 @@
     </ul>
 </div>
 <div class="container-m">
-    <h1 class="header">Spice Rack</h1>
-    <div class="row">
+    <h1 class="header" data-aos="fade-up" data-aos-duration="1500">Spice Rack</h1>
+    <div class="row" data-aos="fade-up" data-aos-duration="1500">
         <div class="col s12">
             <p class="body">Welcome to the spice rack, home to all my <span>seasoned</span> and <span>spicy</span> passion projects! Aside from my professional design work, I also like to nurture my artsy and experimental side through these projects and artworks. As of now, I've mainly been interested in digital media, fine arts, and wearables, so my work on this page are categorized in that way. Some of these pieces are animated and are toggled off for accessibility. Click on the play button to get the full experience, and click again to stop the animation!</p>
         </div>
     </div>
-    <div class="row"><div class="col s12"><h2 class="subheader">Filter through spices:</h2></div>
+    <div class="row" data-aos="fade-up" data-aos-duration="1500"><div class="col s12"><h2 class="subheader">Filter through spices:</h2></div>
         <div class="tab">
             <div class="col l4 m6 s12"><button class="filter" onclick="spiceCategory(event, 'digital')" id="defaultOpen">💻 Digital Media</button></div>
             <div class="col l4 m6 s12"><button class="filter" onclick="spiceCategory(event, 'art')">🎨 Fine Arts</button></div>
@@ -61,7 +62,7 @@
 </div>
 <div class="container-xl">
     <div id="digital" class="tabcontent">
-        <div class="grid">
+        <div class="grid" data-aos="fade-up" data-aos-duration="1500">
             <div class="grid-sizer grid-sizer--width2"></div>
             <div class="grid-item grid-item--width2">
                 <img class="freezeframe-clickoverlay" src="media/spice-rack/digital/social-distancing-min.gif" alt="Cartoon animation of a girl on her computer pulling an all-nighter"></i>
@@ -120,7 +121,7 @@
         </div>
     </div>
     <div id="art" class="tabcontent">
-        <div class="grid">
+        <div class="grid" data-aos="fade-up" data-aos-duration="1500">
             <div class="grid-sizer grid-sizer--width1"></div>
             <div class="grid-item grid-item--width1">
                 <img src="media/spice-rack/artworks/thinking-min.jpg" alt="Self-portrait of the lower half of my face, with flowers blooming from the top.">
@@ -190,7 +191,7 @@
         </div>
     </div>
     <div id="wearables" class="tabcontent">
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
             <div class="col xl6 l8 m9 s12">
                 <img src="media/spice-rack/wake-me-up-at/physical-prototype-min.jpg" alt="Image of four sleeping masks with different subway stops printed on them">
                 <p class="caption"><span>Wake Me Up At...</span>, 2019</p>
@@ -201,7 +202,7 @@
     </div>
 </div>
 <div class="container-m">
-    <footer class="footer-bar">
+    <footer class="footer-bar" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <div class="row row-section">
             <div class="row col l7 m12 s12">
                 <h2 class="subheader">Interested in learning more?</h2>
@@ -225,10 +226,6 @@
         </div>
     </footer>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-<script src="pages/js/freezeframe.js"></script>
-<script src="pages/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script><script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script><script src="pages/js/freezeframe.js"></script><script src="pages/js/script.js"></script><script src="https://unpkg.com/aos@next/dist/aos.js"></script><script>AOS.init();</script>
 </body>
 </html>

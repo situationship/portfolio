@@ -9,6 +9,7 @@ $body-small: 16px;
 $caption-small: 12px;
 $header-xs: 30px;
 $accent-color: #FF3B4A;
+$hover-color: #BF2C38;
 $gray-color: #757575;
 $transition-speed: 0.3s;
 $bold: 500;
@@ -95,7 +96,7 @@ b {
     a {
       color: $accent-color;
       &:hover {
-        color: $gray-color;
+        color: $hover-color;
       }
     }
   }
@@ -105,7 +106,7 @@ a {
   text-decoration-style: dotted;
   &:hover {
     transition: $transition-speed;
-    color: $gray-color;
+    color: $hover-color;
   }
 }
 .hint {
@@ -199,7 +200,7 @@ img {
       color: $accent-color;
       &:hover {
         transition: $transition-speed;
-        color: $gray-color;
+        color: $hover-color;
       }
     }
   }
@@ -262,7 +263,7 @@ img {
       text-transform: uppercase;
       &:hover {
         transition: $transition-speed;
-        color: $gray-color;
+        color: $hover-color;
       }
     }
   }
@@ -359,14 +360,14 @@ img {
     color: white;
     &:hover {
       transition: $transition-speed;
-      background: $gray-color;
+      background: $hover-color;
     }
   }
 }
 .back-to-top a {
   color: $accent-color;
   &:hover {
-    color: $gray-color;
+    color: $hover-color;
   }
 }
 .copyright {

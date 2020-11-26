@@ -103,10 +103,11 @@ b {
 }
 a {
   color: $accent-color;
-  text-decoration-style: dotted;
+  text-decoration: none;
   &:hover {
     transition: $transition-speed;
     color: $hover-color;
+    text-decoration: underline;
   }
 }
 .hint {
@@ -343,7 +344,13 @@ img {
     color: $gray-color;
   }
 }
-
+.resource {
+  background-color: #F6F6F6;
+  border-radius: $rounded-border;
+  padding: 24px;
+  margin: 0;
+  height: 336px;
+}
 .footer-bar {
   margin: 80px 0 50px 0;
   .fa-envelope, .fa-linkedin-in, .fa-instagram, .fa-vimeo-v, .fa-github, .fa-dribbble, .fa-behance {
@@ -496,6 +503,9 @@ img {
   }
   .row-tagline {
     padding:20px 0
+  }
+  .resource {
+    height: auto;
   }
 }
 @media only screen and (max-width: 361px) {

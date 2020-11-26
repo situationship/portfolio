@@ -345,7 +345,8 @@ img {
   }
 }
 .resource {
-  background-color: #F6F6F6;
+  background-color: white;
+  box-shadow: $shadow;
   border-radius: $rounded-border;
   padding: 24px;
   margin: 0;

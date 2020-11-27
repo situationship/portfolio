@@ -8,8 +8,8 @@ $subheader-small: 21px;
 $body-small: 16px;
 $caption-small: 12px;
 $header-xs: 30px;
-$accent-color: #FF3B4A;
-$hover-color: #BF2C38;
+$accent-color: #EB0014;
+$hover-color: #B0000F;
 $gray-color: #757575;
 $light-gray-color: #F4F4F4;
 $transition-speed: 0.3s;
@@ -149,6 +149,9 @@ img {
 .hide {
   display: none !important;
 }
+#navItems {
+  background: rgba(255, 255, 255, .95);
+}
 #navbar, #navItems {
   text-align: right;
   width: 100%;
@@ -156,9 +159,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  height: 65px;
+  height: 60px;
   overflow: hidden;
-  z-index: 99;
+  z-index: 9999;
   transition: top $transition-speed;
 }
 .nav-logo, .nav-items {
@@ -167,6 +170,7 @@ img {
 .nav-logo {
   position: relative;
   margin: 0;
+  z-index: 99999;
 }
 .nav-logo img {
   position: absolute;

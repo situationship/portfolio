@@ -7,12 +7,6 @@ window.onscroll = function() {
     } else {
         document.getElementById("navItems").style.top = "-60px";
     }
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("hamburgerMenu").style.top = "25px";
-    }
-    else {
-        document.getElementById("hamburgerMenu").style.top = "-25px";
-    }
     prevScrollpos = currentScrollPos;
 }
 //smooth scroll

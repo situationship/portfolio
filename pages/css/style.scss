@@ -68,9 +68,9 @@ b {
   display: none;
 }
 .pace .pace-progress {
-  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
-  background-image: -webkit-linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
-  background-image: linear-gradient(to left, #FF3B4A, #FF8E3B, #FFF03B, #ACFF3B, #3BFFBF,#3BDDFF, #3B7BFF, #8E3BFF, #F03BFF);
+  background-image: linear-gradient(to left, #EB0014, #EB6100, #EBD700, #8AEB00, #00EBD7, #0089EB, #0014EB, #6200EB, #D700EB);
+  background-image: -webkit-linear-gradient(to left, #EB0014, #EB6100, #EBD700, #8AEB00, #00EBD7, #0089EB, #0014EB, #6200EB, #D700EB);
+  background-image: linear-gradient(to left, #EB0014, #EB6100, #EBD700, #8AEB00, #00EBD7, #0089EB, #0014EB, #6200EB, #D700EB);
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -344,11 +344,9 @@ img {
 }
 .tab button.active {
   background-color: $light-gray-color;
+  color: black;
   box-shadow: none;
   outline: none;
-  &:hover {
-    color: $gray-color;
-  }
 }
 .resource {
   background-color: white;

@@ -46,6 +46,7 @@ function toggleMenu() {
         opacity: "toggle"
     }, 300);
 }
+//scrollspy
 window.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {

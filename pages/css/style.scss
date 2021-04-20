@@ -478,6 +478,21 @@ video {
   padding: 0;
   display: none;
 }
+#capsule {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 @media only screen and (max-width: 1479px) {
   .section-nav {
     max-width: 140px;
@@ -503,6 +518,9 @@ video {
   }
   .grid-sizer--width1, .grid-item--width1 {
     width: 47%;
+  }
+  #capsule {
+    padding-top: 75%;
   }
 }
 @media only screen and (max-width: 601px) {
@@ -558,6 +576,9 @@ video {
   }
   .resource {
     height: auto;
+  }
+  #capsule {
+    padding-top: 100%;
   }
 }
 @media only screen and (max-width: 361px) {

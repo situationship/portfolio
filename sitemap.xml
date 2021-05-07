@@ -9,48 +9,53 @@
 
 <url>
   <loc>https://ginachee.com/</loc>
-  <lastmod>2020-11-03T18:28:08+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ginachee.com/spicy</loc>
-  <lastmod>2020-11-03T18:28:10+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/about</loc>
-  <lastmod>2020-11-03T18:28:08+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ginachee.com/capsule</loc>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/amazon</loc>
-  <lastmod>2020-11-03T18:28:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://ginachee.com/nyu-facilities</loc>
-  <lastmod>2020-11-03T18:28:10+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/pink-tax</loc>
-  <lastmod>2020-11-03T18:28:10+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:23+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ginachee.com/nyu-facilities</loc>
+  <lastmod>2021-05-07T02:48:23+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/daily-ui</loc>
-  <lastmod>2020-11-03T18:28:08+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/ipo</loc>
-  <lastmod>2020-11-03T18:28:08+00:00</lastmod>
+  <lastmod>2021-05-07T02:48:22+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://ginachee.com/viewtrade</loc>
-  <lastmod>2020-11-03T18:28:10+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2021-05-07T02:48:23+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

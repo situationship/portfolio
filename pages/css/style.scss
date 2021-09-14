@@ -12,10 +12,11 @@ $accent-color: #EB0014;
 $hover-color: #B0000F;
 $gray-color: #757575;
 $light-gray-color: #F0F0F0;
+$background-color: #FBFBFB;
 $transition-speed: 0.3s;
 $bold: 500;
 $rounded-border: 6px;
-$shadow: 0 4px 12px 2px rgba(0,0,0,0.1);
+$shadow: 0 10px 30px rgba(0,0,0,0.1);
 $header-background: rgba(255, 255, 255, .9);
 $primary-font: canada-type-gibson, sans-serif;
 $mono-font: source-code-pro, monospace;
@@ -25,6 +26,7 @@ html {
   overflow-y: scroll;
 }
 body {
+  background-color: $background-color;
   font-family: $primary-font;
   font-weight: 300;
   font-style: normal;
@@ -42,7 +44,7 @@ b {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: white;
+  background: $background-color;
 }
 ::-webkit-scrollbar-thumb {
   background: $gray-color;
@@ -73,7 +75,7 @@ b {
   background-image: -webkit-linear-gradient(to left, #EB0014, #EB6100, #EBD700, #8AEB00, #00EBD7, #0089EB, #0014EB, #6200EB, #D700EB);
   background-image: linear-gradient(to left, #EB0014, #EB6100, #EBD700, #8AEB00, #00EBD7, #0089EB, #0014EB, #6200EB, #D700EB);
   position: fixed;
-  z-index: 2000;
+  z-index: 999999;
   top: 0;
   right: 100%;
   width: 100%;
@@ -115,7 +117,7 @@ a {
 }
 .hint {
   font-size: $caption-size;
-  color:white;
+  color:$background-color;
 }
 img {
   width:100%;
@@ -159,7 +161,8 @@ video {
   display: none !important;
 }
 #navItems {
-  background: rgba(255, 255, 255, .95);
+  background: rgba(251, 251, 251, .8);
+  backdrop-filter: blur(16px);
 }
 #navbar, #navItems {
   text-align: right;
@@ -258,7 +261,8 @@ video {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, .95);
+  background: rgba(251, 251, 251, .8);
+  backdrop-filter: blur(16px);
   overflow: auto;
   z-index: 999;
   display: none;
@@ -353,7 +357,7 @@ video {
   font-family: $primary-font;
   font-weight: 300;
   font-style: normal;
-  background-color: white;
+  background-color: $background-color;
   box-shadow: $shadow;
   border: 1px solid $light-gray-color;
   padding: 20px;
@@ -378,7 +382,7 @@ video {
   border: none;
 }
 .resource {
-  background-color: white;
+  background-color: $background-color;
   box-shadow: $shadow;
   border-radius: $rounded-border;
   padding: 32px;
@@ -398,7 +402,7 @@ video {
     margin: 0 5px 0 0;
     border-radius: 50%;
     background: $accent-color;
-    color: white;
+    color: $background-color;
     &:hover {
       transition: $transition-speed;
       background: $hover-color;

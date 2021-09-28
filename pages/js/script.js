@@ -1,4 +1,4 @@
-//sticky header
+//hide header on scroll
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;

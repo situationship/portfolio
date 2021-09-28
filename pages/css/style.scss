@@ -264,6 +264,7 @@ video {
   width: 100%;
   background: rgba(251, 251, 251, .8);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   overflow: auto;
   z-index: 999;
   display: none;
@@ -536,6 +537,8 @@ video {
   }
   #navItems {
     background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
   .hamburger-menu, .specs-mobile {
     display: block;

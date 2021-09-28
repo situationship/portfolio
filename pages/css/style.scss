@@ -163,6 +163,7 @@ video {
 #navItems {
   background: rgba(251, 251, 251, .8);
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 #navbar, #navItems {
   text-align: right;

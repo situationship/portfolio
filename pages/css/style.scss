@@ -294,7 +294,7 @@ video {
   position: sticky;
   top: 0;
 }
-.sticky > nav {
+.sticky > {
   position: absolute;
   align-self: start;
   margin-top: 80px;
@@ -312,13 +312,13 @@ video {
 .row-section {
   margin-top:30px;
 }
-.row-nav {
+.row-{
   margin-top: 100px;
 }
 .row-intro {
   padding:50px 0
 }
-.section-nav {
+.section-{
   font-family: $mono-font;
   position: fixed;
   z-index: 1;
@@ -502,7 +502,7 @@ video {
   height: 100%;
 }
 @media only screen and (max-width: 1479px) {
-  .section-nav {
+  .section-{
     max-width: 140px;
     a {
       font-size: $caption-small;
@@ -510,7 +510,7 @@ video {
   }
 }
 @media only screen and (max-width: 1339px) {
-  .section-nav {
+  .section-{
     display: none;
   }
 }
@@ -561,7 +561,7 @@ video {
   .subheader {
     font-size: $subheader-small;
   }
-  .body, .quickNav a.selected, .quickNav a.unselected, li, .subheader-left, .subheader-right, .specs-mobile, .fa-arrow-up, .button-details p {
+  .body, .quicka.selected, .quicka.unselected, li, .subheader-left, .subheader-right, .specs-mobile, .fa-arrow-up, .button-details p {
     font-size: $body-small;
   }
   .copyright, .caption, .button {

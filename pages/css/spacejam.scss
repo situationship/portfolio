@@ -27,7 +27,7 @@ img {
   width: 100%;
   height: auto;
 }
-.nav {
+.planet {
   padding: 16px;
   transition: transform .2s;
   &:hover {
@@ -57,7 +57,7 @@ img {
   }
 }
 @media only screen and (max-width: 600px) {
-  .nav {
+  .planet {
     padding: 24px;
   }
   #desktop-jam {

@@ -1,6 +1,5 @@
 var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
 var sparkles=50;
-
 /****************************
  *  Tinkerbell Magic Sparkle *
  *(c)2005-13 mf2fm web-design*
@@ -20,7 +19,6 @@ var stary=new Array();
 var tinyx=new Array();
 var tinyy=new Array();
 var tinyv=new Array();
-
 window.onload=function() { if (document.getElementById) {
     var i, rats, rlef, rdow;
     for (var i=0; i<sparkles; i++) {
@@ -47,7 +45,6 @@ window.onload=function() { if (document.getElementById) {
     set_width();
     sparkle();
 }}
-
 function sparkle() {
     var c;
     if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
@@ -69,7 +66,6 @@ function sparkle() {
     }
     setTimeout("sparkle()", 40);
 }
-
 function update_star(i) {
     if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
     if (starv[i]) {
@@ -96,7 +92,6 @@ function update_star(i) {
         tiny[i].style.visibility="visible"
     }
 }
-
 function update_tiny(i) {
     if (--tinyv[i]==25) {
         tiny[i].style.width="1px";
@@ -117,7 +112,6 @@ function update_tiny(i) {
     }
     else tiny[i].style.visibility="hidden";
 }
-
 document.onmousemove=mouse;
 function mouse(e) {
     if (e) {
@@ -130,7 +124,6 @@ function mouse(e) {
         x=event.x+sleft;
     }
 }
-
 window.onscroll=set_scroll;
 function set_scroll() {
     if (typeof(self.pageYOffset)=='number') {
@@ -150,7 +143,6 @@ function set_scroll() {
         sleft=0;
     }
 }
-
 window.onresize=set_width;
 function set_width() {
     var sw_min=999999;
@@ -174,7 +166,6 @@ function set_width() {
     swide=sw_min;
     shigh=sh_min;
 }
-
 function createDiv(height, width) {
     var div=document.createElement("div");
     div.style.position="absolute";
@@ -183,7 +174,6 @@ function createDiv(height, width) {
     div.style.overflow="hidden";
     return (div);
 }
-
 function newColour() {
     var c=new Array();
     c[0]=255;

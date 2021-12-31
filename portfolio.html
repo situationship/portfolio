@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159372369-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-159372369-1');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gina Chee</title>
+  <meta name="image" property="og:image" content="https://ginachee.com/media/thumbnail.jpg">
+  <meta name="author" content="Gina Chee">
+  <meta name="theme-color" content="#FBFBFB">
+  <meta property="og:description" content="Gina Chee is a product designer, student, and dog mom. Click here to view her portfolio!"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+  <link rel="manifest" href="media/favicon/site.webmanifest">
+  <link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#eb0014">
+  <meta name="msapplication-TileColor" content="#eb0014">
+  <meta name="theme-color" content="#ff0000">
+  <link href="pages/css/home.css" rel="stylesheet">
+  <link href="pages/css/style.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a3e9cdedbf.js" crossorigin="anonymous" async></script>
+  <script src="pages/js/pace.js" async></script>
+</head>
+<body>
+<nav id="navbar">
+  <a href="/portfolio" title="Gina Chee"><figure class="nav-logo"><img id="logo-front" class="swap__front" src="media/monogram.svg" alt="Gina Chee logo"><img id="logo-back" class="swap__back" src="media/monogram-red.svg" alt="Gina Chee logo"></figure></a>
+  <div id="navItems"><ul class="nav-items">
+    <li><a href="/portfolio"><b>Portfolio</b></a></li>
+    <li><a href="/spicy">Spice Rack</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul></div>
+</nav>
+<div class="hamburger-menu collapsed" id="hamburgerMenu" onclick="toggleMenu()">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</div>
+<div class="mobile-overlay">
+  <ul class="mobile-nav-items">
+    <li><a href="/portfolio"><b>Portfolio</b></a></li>
+    <li><a href="/spicy">Spice Rack</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="https://drive.google.com/file/d/1Oq_8-OSxcDfpCqwGGIt2HRqeQsbFTjYk/view?usp=sharing" target="_blank">Résumé</a></li>
+  </ul>
+</div>
+<div id="intro" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+  <div class="container-s">
+    <div class="row row-intro">
+      <div class="col xl9 l10 m12 s10 offset-s1">
+        <h1 class="hello">Hey there, my name is <span><a href="/about" title="About">Gina</a></span>. 👋🏼</h1>
+        <div class="col xl8 l8 m7 s12" style="padding:0;margin:0;">
+          <h2 class="description">I am a <a href="#works">product designer</a> and <a href="/spicy" title="Spice Rack">artist</a> based in NYC.</h2>
+        </div>
+        <div class="col s12" style="padding:0;margin:0;">
+          <p class="hint">HINT: Hover over the image next to the waving emoji to see some moving picture magic!</p>
+        </div>
+      </div>
+      <div class="col xl3 l2"><div class="freezeframe-dontstop"><img class="animation" src="media/sparkle-min.gif" alt="Animation of sparkles"></div></div>
+    </div>
+  </div>
+  <div class="action-down">
+    <a class="arrow" href="#works">
+      <p class="scroll">View my work!</p>
+      <div class="bounce"><i class="fas fa-chevron-down"></i></div>
+    </a>
+  </div>
+</div>
+
+<div id="works">
+  <div class="container-xxl">
+    <div class="grid">
+      <div class="grid-sizer grid-sizer--width2"></div>
+      <div class="grid-item grid-item--width2 content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <a href="/nyu-engage">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="media/thumbnails/nyu-engage-min.png" alt="Web screen of club roster management application">
+          <div class="content-details fadeIn-top">
+            <h3>NYU Engage Membership Manager</h3>
+            <p>Research, UX/UI Design, Prototyping</p>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item grid-item--width2 content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <a href="/amazon">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="media/thumbnails/amazon-min.png" alt="Amazon Alexa logo">
+          <div class="content-details fadeIn-top">
+            <h3>Amazon Alexa</h3>
+            <p>Research, UX/UI Design</p>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item grid-item--width2 content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <a href="/pink-tax">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="media/thumbnails/thinkpink-min.png" alt="Mobile screens of an app addressing the pink tax">
+          <div class="content-details fadeIn-top">
+            <h3>ThinkPink</h3>
+            <p>Research, UX/UI Design, Prototyping</p>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item grid-item--width2 content" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <a href="/daily-ui">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="media/thumbnails/daily-ui-min.png" alt="Collage of the 100 Days of UI Challenge">
+          <div class="content-details fadeIn-top">
+            <h3>100 Days of UI</h3>
+            <p>UI Design</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-m">
+  <footer class="footer-bar" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="row row-section">
+      <div class="row col l7 m8 s12">
+        <h2 class="subheader">Interested in learning more?</h2>
+        <p class="body">Shoot me an email at <a href="mailto:gmail@ginachee.com" title="Email" target="_blank">gmail@ginachee.com</a> if you want to chat about my work, museum exhibitions, or the dogs you've seen this week.</p>
+        <p class="body">Or, get to know me better through my other platforms.</p>
+      </div>
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m4 s12">
+        <h2 class="subheader">Let's connect:</h2>
+        <a href="https://www.linkedin.com/in/ginachee/" class="fab fa-linkedin-in" title="LinkedIn" target="_blank"></a>
+        <a href="https://dribbble.com/ginachee" class="fab fa-dribbble" title="Dribbble" target="_blank"></a>
+        <a href="https://www.behance.net/ginachee" class="fab fa-behance" title="Behance" target="_blank"></a>
+        <a href="https://vimeo.com/ginachee" class="fab fa-vimeo-v" title="Vimeo" target="_blank"></a>
+      </div>
+      <div class="row col xl4 offset-xl1 l4 offset-l1 m4 s12">
+        <p class="body back-to-top"><a href="#">Back to top <i class="fas fa-arrow-up"></i></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <p class="copyright">&copy; 2022 Gina Chee. <a href="/">Take me back to space</a> 🚀.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="pages/js/freezeframe.js"></script>
+<script src="pages/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

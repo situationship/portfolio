@@ -10,7 +10,7 @@ $hello-xs: 28px;
 $accent-color: #EB0014;
 $gray-color: #757575;
 $transition-speed: 0.3s;
-$mono-font: source-code-pro, monospace;
+$mono-font: 'DM Mono', monospace;
 
 #intro {
   width: 100%;
@@ -19,7 +19,7 @@ $mono-font: source-code-pro, monospace;
 }
 h1.hello {
   font-size: $hello-size;
-  font-weight: 500;
+  font-weight: bold;
   margin: 0;
   margin: 0;
   span {
@@ -46,9 +46,9 @@ h1.hello {
 }
 h2.description {
   font-size: $subheader-size;
-  font-weight: 300;
+  font-weight: normal;
   a {
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     color: $accent-color;
   }
@@ -144,7 +144,7 @@ p.scroll {
   h3 {
     color: white;
     font-size: $subheader-size;
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 0.5em;
   }
   p {

@@ -2,7 +2,7 @@ $header-size: 40px;
 $body-size: 18px;
 $header-small: 36px;
 $accent-color: #EB0014;
-$mono-font: source-code-pro, monospace;
+$mono-font: 'DM Mono', monospace;
 
 .error, .message {
   text-align: center;
@@ -17,7 +17,7 @@ $mono-font: source-code-pro, monospace;
   margin-top:-25px;
 }
 .message {
-  font-weight: 500;
+  font-weight: bold;
   font-size: $header-size;
 }
 

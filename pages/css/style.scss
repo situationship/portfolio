@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;700&display=swap');
 $header-size: 36px;
 $subheader-size: 24px;
 $body-size: 18px;
@@ -10,12 +10,12 @@ $caption-small: 12px;
 $header-xs: 28px;
 $accent-color: #EB0014;
 $hover-color: #B0000F;
-$gray-color: #737373;
-$light-gray-color: #EEEBEB;
+$gray-color: #6D6B6B;
+$light-gray-color: #D9D5D5;
 $background-color: #FFFBFB;
 $transition-speed: 0.3s;
 $rounded-border: 6px;
-$shadow: 0 10px 30px rgba(0,0,0,0.1);
+$shadow: 0 10px 30px #D9D5D5;
 $header-background: rgba(255, 251, 251, .85);
 $primary-font: 'DM Sans', sans-serif;
 $mono-font: 'DM Mono', monospace;
@@ -117,6 +117,10 @@ a {
 .hint {
   font-size: $caption-size;
   color:$background-color;
+  a {
+    color:$background-color;
+    text-decoration: underline;
+  }
 }
 img {
   width:100%;
@@ -148,7 +152,7 @@ video {
   margin: 4px 0;
   span {
     font-style: italic;
-    font-weight: bold;
+    font-weight: 500;
     color: $gray-color;
   }
   a {
@@ -336,7 +340,7 @@ video {
     &:hover, &:focus {
       color: $accent-color;
       transition: $transition-speed;
-      font-weight: bold;
+      font-weight: 500;
     }
   }
 }

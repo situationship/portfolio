@@ -182,3 +182,10 @@ function newColour() {
     c.sort(function(){return (0.5 - Math.random());});
     return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
+
+var audio = document.getElementById("audio");
+
+function playSound() {
+    audio.currentTime = 0;
+    audio.play();
+}

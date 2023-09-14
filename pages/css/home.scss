@@ -157,12 +157,20 @@ p.scroll {
   top: 20%;
 }
 
+@media only screen and (min-width: 1201px) {
+  .content-details h3, .content-details p {
+    padding: 0 4em 0 4em;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .content-details h3 {
     font-size: $subheader-small;
+    padding: 0 2em 0 2em;
   }
   .content-details p {
     font-size: $body-small;
+    padding: 0 2em 0 2em;
   }
 }
 
@@ -198,10 +206,12 @@ p.scroll {
     h3 {
       font-size: $body-size;
       margin: 0 0 6px 0;
+      padding: revert;
     }
     p {
       font-size: $caption-small;
       margin: 6px 0 0 0;
+      padding: revert;
     }
   }
   .fadeIn-top {

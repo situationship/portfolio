@@ -17,7 +17,7 @@ $background-color: #081021;
   font-style: italic;
 }
 * {
-  cursor: url(https://cur.cursors-4u.net/people/peo-5/peo396.cur), auto !important;  height: auto;
+  cursor: url(/media/cursor.cur), auto !important;  height: auto;
   -khtml-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
@@ -158,7 +158,7 @@ img {
     white-space: nowrap;
     text-overflow: clip;
     position: relative;
-    left:-55px;
+    left:-34px;
   }
 }
 @media only screen and (min-width: 601px) {

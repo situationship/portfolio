@@ -21,8 +21,7 @@ h1.hello {
   font-size: $hello-size;
   font-weight: bold;
   margin: 0;
-  margin: 0;
-  span {
+  .link {
     background-repeat: no-repeat;
     -webkit-transition: all .4s ease;
     transition: all .4s ease;

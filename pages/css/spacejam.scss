@@ -47,6 +47,10 @@ a {
     text-decoration: underline;
   }
 }
+p span {
+  font-weight: bold;
+  color: $accent-color;
+}
 img {
   width: 100%;
   height: auto;
@@ -158,7 +162,7 @@ img {
     white-space: nowrap;
     text-overflow: clip;
     position: relative;
-    left:-34px;
+    left:-36px;
   }
 }
 @media only screen and (min-width: 601px) {

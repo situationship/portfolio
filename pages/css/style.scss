@@ -40,7 +40,7 @@ b {
 .list {
   margin: 20px 0;
   list-style: none;
-  :before {  content: '❇'; padding-right:10px;}
+  :before {  content: "\2747"; font-weight: normal; color: $gray-color; padding-right:10px;}
 }
 ::-webkit-scrollbar {
   width: 8px;

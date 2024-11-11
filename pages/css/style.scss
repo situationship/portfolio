@@ -39,6 +39,8 @@ b {
 }
 .list {
   margin: 20px 0;
+  list-style: none;
+  :before {  content: '❇'; padding-right:10px;}
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -565,7 +567,7 @@ video {
   .subheader {
     font-size: $subheader-small;
   }
-  .body, .quickNav a.selected, .quickNav a.unselected, li, .subheader-left, .subheader-right, .specs-mobile, .fa-arrow-up, .button-details p {
+  .body, .quickNav a.selected, .quickNav a.unselected, li, .subheader-left, .subheader-right, .specs-mobile, .fa-arrow-up, .button-details p, .bottom-nav, .tab button {
     font-size: $body-small;
   }
   .copyright, .caption, .button {

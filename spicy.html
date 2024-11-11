@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spice Rack | Gina Chee</title>
-    <meta name="image" property="og:image" content="https://ginachee.com/media/spice-rack/spicy-thumbnail.jpg">
+    <meta name="image" property="og:image" content="https://ginachee.com/media/thumbnail.jpg">
     <meta name="author" content="Gina Chee">
     <meta name="theme-color" content="#FBFBFB">
     <meta property="og:description" content="Hey there, my name is Gina. I am a product designer & artist based in NYC. Click here to view my portfolio!"/>
-    <meta name="theme-color" content="#FBFBFB">
+    <meta name="theme-color" content="#FFFBFB">
     <link rel="icon" type="image/png" href="media/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="media/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="media/favicon/favicon.svg" />
     <link rel="shortcut icon" href="media/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="media/favicon/site.webmanifest" />
@@ -47,27 +47,21 @@
     <h1 class="header">Spice Rack</h1>
     <div class="row">
         <div class="col s12">
-            <p class="body">Welcome to the spice rack, home to all my <b>seasoned</b> and <b>spicy</b> passion projects! Aside from my professional design work, I also like to nurture my artsy and experimental side through these projects and artworks. As of now, I've mainly been interested in digital media, fine arts, and wearables, so my work on this page are categorized in that way. Some of these pieces are animated and are toggled off for accessibility. Click on the play button to get the full experience, and click again to stop the animation!</p>
+            <p class="body" style="text-align:center;">Welcome to the spice rack, an area for my <b>zesty</b>, <b>tangy</b>, and <b>well-seasoned</b> passion projects!</p>
         </div>
     </div>
     <div class="row"><div class="col s12"><h2 class="subheader">Filter through spices:</h2></div>
         <div class="tab">
-            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'digital')" id="defaultOpen">💻&ensp;Digital Media</button></div>
-            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'art')">🎨&ensp;Fine Arts</button></div>
-            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'wearables')">🧵&ensp;Wearables</button></div>
+            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'design')" id="defaultOpen">💻&ensp;Design</button></div>
+            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'art')">🎨&ensp;Art</button></div>
+            <div class="col l4 m4 s12"><button class="filter" onclick="spiceCategory(event, 'archive')">🗃️&ensp;Archived Work</button></div>
         </div>
     </div>
 </div>
 <div class="container-xl">
-    <div id="digital" class="tabcontent">
+    <div id="design" class="tabcontent">
         <div class="grid">
             <div class="grid-sizer grid-sizer--width2"></div>
-            <div class="grid-item grid-item--width2">
-                <a href="https://www.behance.net/gallery/108510347/Daily-UX-Writing-Challenge-COMPLETED" target="_blank"><img src="media/spice-rack/digital/daily-ux-writing.png" alt="Collage of my designs for Daily UX Writing challenge"><i class="fas fa-external-link-alt"></i></a>
-                <p class="caption"><span><a href="https://www.behance.net/gallery/108510347/Daily-UX-Writing-Challenge-COMPLETED" target="_blank">Daily UX Writing</a></span>, Dec 2020 - Mar 2021</p>
-                <p class="caption">UX Writing, UI Design</p>
-                <p class="caption">Tools used: Figma</p>
-            </div>
             <div class="grid-item grid-item--width2">
                 <img class="freezeframe-clickoverlay" src="media/spice-rack/digital/social-distancing-min.gif" alt="Cartoon animation of a girl on her computer pulling an all-nighter"></i>
                 <p class="caption"><span>what have you been doing to pass the time?</span>, 2020</p>
@@ -122,6 +116,17 @@
         <div class="grid">
             <div class="grid-sizer grid-sizer--width1"></div>
             <div class="grid-item grid-item--width1">
+                <a href="https://www.depop.com/chairshirt/" target="_blank"><img src="media/spice-rack/artworks/chair-shirt-min.jpeg" alt="White t-shirt with red collage of different chair designs"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span>Chair Shirt</span>, 2024</p>
+                <p class="caption">Block print on cotton t-shirt</p>
+                <p class="caption">My friend Jennifer and I make <a href="https://www.depop.com/chairshirt/" target="_blank">chair shirts</a>!</p>
+            </div>
+            <div class="grid-item grid-item--width1">
+                <img src="media/spice-rack/artworks/gaslight-min.jpg" alt="Canvas tote bags with pink botanical illustration with gaslight, gatekeep, girlboss phrase">
+                <p class="caption"><span>Gaslight, Gatekeep, Girlboss</span>, 2021</p>
+                <p class="caption">Screen printing on canvas tote bag</p>
+            </div>
+            <div class="grid-item grid-item--width1">
                 <img src="media/spice-rack/artworks/over-spilled-milk-min.jpg" alt="Print of milk carton tipped over a puddle of milk">
                 <p class="caption"><span>Over Spilled Milk</span>, 2021</p>
                 <p class="caption">Linocut. 8 x 10 in.</p>
@@ -147,6 +152,11 @@
                 <p class="caption">Digital illustration (Procreate).</p>
             </div>
             <div class="grid-item grid-item--width1">
+                <img src="media/spice-rack/artworks/wake-me-up-at/physical-prototype-min.jpg" alt="Four sleeping masks with different subway stops printed on them">
+                <p class="caption"><span>Wake Me Up At...</span>, 2019</p>
+                <p class="caption">Laser-etching on silk sleeping masks</p>
+            </div>
+            <div class="grid-item grid-item--width1">
                 <img src="media/spice-rack/artworks/study-of-nyc-min.jpg" alt="Picture of a sketchbook study of the NYC skyline held in front of skyline reference">
                 <p class="caption"><span>New York Study</span>, 2017</p>
                 <p class="caption">Marker on paper.</p>
@@ -167,47 +177,40 @@
                 <p class="caption">Oil paint on canvas. 18 x 24 in.</p>
             </div>
             <div class="grid-item grid-item--width1">
-                <img src="media/spice-rack/artworks/jolly.jpg" alt="Still-life drawing of various holiday-themed items">
-                <p class="caption"><span>Jolly</span>, 2014</p>
-                <p class="caption">Soft pastel and charcoal on paper. 36 x 18 in.</p>
-            </div>
-            <div class="grid-item grid-item--width1">
-                <img src="media/spice-rack/artworks/drapery-with-emphasis.jpg" alt="Black and white drawing of drapery with a colorful glass turtle sitting on top">
-                <p class="caption"><span>Drapery with Emphasis</span>, 2014</p>
-                <p class="caption">Prismacolor and graphite on paper. 18 x 24 in.</p>
-            </div>
-            <div class="grid-item grid-item--width1">
-                <img src="media/spice-rack/artworks/maidens-prayer.png" alt="Self portrait of a girl holding an accordion">
-                <p class="caption"><span>The Maiden's Prayer</span>, 2012</p>
-                <p class="caption">Oil paint on canvas. 12 x 18 in.</p>
-            </div>
-            <div class="grid-item grid-item--width1">
                 <img src="media/spice-rack/artworks/untitled-1.jpg" alt="Landscape painting of a barn behind a fenced pond">
                 <p class="caption"><span>Untitled</span>, 2011</p>
                 <p class="caption">Oil paint on canvas. 18 x 12 in.</p>
             </div>
         </div>
     </div>
-    <div id="wearables" class="tabcontent">
+    <div id="archive" class="tabcontent">
         <div class="grid">
             <div class="grid-sizer grid-sizer--width2"></div>
             <div class="grid-item grid-item--width2">
-                <img src="media/spice-rack/chair-shirt-min.jpeg" alt="White t-shirt with red collage of different chair designs">
-                <p class="caption"><span>Chair Shirt</span>, 2024</p>
-                <p class="caption">Block print on cotton t-shirt</p>
-                <p class="caption">My friend Jennifer and I make <a href="https://www.depop.com/chairshirt/" target="_blank">chair shirts</a>!</p>
+                <a href="/capsule" target="_blank"><img src="media/spice-rack/archive/capsule-min.png" alt="Two mobile app mockups, one shows the home page of a gallery of clothing and the other is a conversation between a user and an AI chatbot that helps users style clothes"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span><a href="/capsule" target="_blank">capsule</a></span>, 2021</p>
+                <p class="caption">Helping fashion-lovers style the clothes they already own</p>
             </div>
             <div class="grid-item grid-item--width2">
-                <img src="media/spice-rack/gaslight-min.jpg" alt="Canvas tote bags with pink botanical illustration with gaslight, gatekeep, girlboss phrase">
-                <p class="caption"><span>Gaslight, Gatekeep, Girlboss</span>, 2021</p>
-                <p class="caption">Screen printing on canvas tote bag</p>
-                <p class="caption">A parody of commercialized feminist merchandise with inspirational fifth-wave feminism sprinkled in.</p>
+                <a href="https://www.behance.net/gallery/108510347/Daily-UX-Writing-Challenge-COMPLETED" target="_blank"><img src="media/spice-rack/digital/daily-ux-writing.png" alt="Collage of my designs for Daily UX Writing challenge"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span><a href="https://www.behance.net/gallery/108510347/Daily-UX-Writing-Challenge-COMPLETED" target="_blank">Daily UX Writing</a></span>, Dec 2020 - Mar 2021</p>
+                <p class="caption">UX Writing, UI Design</p>
+                <p class="caption">Tools used: Figma</p>
             </div>
             <div class="grid-item grid-item--width2">
-                <img src="media/spice-rack/wake-me-up-at/physical-prototype-min.jpg" alt="Four sleeping masks with different subway stops printed on them">
-                <p class="caption"><span>Wake Me Up At...</span>, 2019</p>
-                <p class="caption">Laser-etching on silk sleeping masks</p>
-                <p class="caption">Inspired by one of my <a href="https://vimeo.com/374467050" target="_blank">previous works</a>, I wanted to create these masks as both a performance piece and an assistive wearable. Flustered by capitalism and its effects on our work-life balance, I chose to make these masks after years of observing people falling asleep on subways during their commute.</p>
+                <a href="/daily-ui" target="_blank"><img src="media/spice-rack/archive/daily-ui-min.png" alt="Collage of different UI designs I created for 100 Days of UI"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span><a href="/daily-ui" target="_blank">100 Days of UI</a></span>, 2020</p>
+                <p class="caption">Helping fashion-lovers style the clothes they already own</p>
+            </div>
+            <div class="grid-item grid-item--width2">
+                <a href="/thinkpink" target="_blank"><img src="media/spice-rack/archive/thinkpink-min.png" alt="Two mobile mockups, one is the landing screen of ThinkPink with a grid of personal hygiene products to browse through, and the other is a comparison of a razor with a cheaper alternative"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span><a href="/thinkpink" target="_blank">ThinkPink</a></span>, 2019</p>
+                <p class="caption">Helping fashion-lovers style the clothes they already own</p>
+            </div>
+            <div class="grid-item grid-item--width2">
+                <a href="https://drive.google.com/file/d/1CBeK5ZbbUxgARKNDr4m5m2sJf_6hHRZi/view?usp=sharing" target="_blank"><img src="media/spice-rack/archive/brochure1-min.jpg" alt="Front and back view of an informational brochure advertising ViewTrade"><i class="fas fa-external-link-alt"></i></a>
+                <p class="caption"><span><a href="https://drive.google.com/file/d/1CBeK5ZbbUxgARKNDr4m5m2sJf_6hHRZi/view?usp=sharing" target="_blank">ViewTrade Instututional</a></span>, 2018</p>
+                <p class="caption">Branding and media assets for business conference display</p>
             </div>
         </div>
     </div>

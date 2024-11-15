@@ -1,9 +1,9 @@
 $hello-size: 36px;
-$subheader-size: 24px;
+$header2-size: 24px;
 $body-size: 18px;
 $caption-size: 13px;
 $hello-small: 32px;
-$subheader-small: 21px;
+$header2-small: 21px;
 $body-small: 16px;
 $caption-small: 12px;
 $hello-xs: 28px;
@@ -44,7 +44,7 @@ h1.hello {
   }
 }
 h2.description {
-  font-size: $subheader-size;
+  font-size: $header2-size;
   font-weight: normal;
   a {
     font-weight: bold;
@@ -142,7 +142,7 @@ p.scroll {
   transition: all 0.3s ease-in-out 0s;
   h3 {
     color: white;
-    font-size: $subheader-size;
+    font-size: $header2-size;
     font-weight: bold;
     margin-bottom: 0.5em;
   }
@@ -164,7 +164,7 @@ p.scroll {
 
 @media only screen and (max-width: 1200px) {
   .content-details h3 {
-    font-size: $subheader-small;
+    font-size: $header2-small;
     padding: 0 2em 0 2em;
   }
   .content-details p {
@@ -227,7 +227,7 @@ p.scroll {
     }
   }
   h2.description {
-    font-size: $subheader-small;
+    font-size: $header2-small;
   }
   img.portrait {
     display: none;
